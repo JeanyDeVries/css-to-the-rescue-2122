@@ -78,13 +78,12 @@ body>ul:first-child>li:nth-child(3) ul{
         height: 25px;
         background-color:white;
         margin: 0 auto;
-        box-shadow: 0px 4px 30px  rgb(161, 186, 209);
 
         position: absolute;
         top:0;
         left: 50px;
 
-        box-shadow: 0 4px 0px grey;
+        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -99,13 +98,12 @@ body>ul:first-child>li:nth-child(3) ul{
         height: 25px;
         background-color:white;
         margin: 0 auto;
-        box-shadow: 0px 0px 30px  rgb(161, 186, 209);
  
         position: absolute;
         top:0;
         left: 100px;
 
-        box-shadow: 0 4px 0px grey;
+        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -122,13 +120,11 @@ body>ul:first-child>li:nth-child(3) ul{
         background-color:white;
         margin: 0 auto;
         left: 150px;
-
-        box-shadow: 0px 0px 30px  rgb(161, 186, 209);
         
         position: absolute;
         top:0;
 
-        box-shadow: 0 4px 0px grey;
+        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -142,13 +138,12 @@ body>ul:first-child>li:nth-child(3) ul{
         height: 25px;
         background-color:white;
         margin: 0 auto;
-        box-shadow: 0px 0px 30px  rgb(161, 186, 209);
         
         position: absolute;
         left:50px;
         top:40px;
 
-        box-shadow: 0 4px 0px grey;
+        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -162,13 +157,12 @@ body>ul:first-child>li:nth-child(3) ul{
         height: 25px;
         background-color:white;
         margin: 0 auto;
-        box-shadow: 0px 0px 30px  rgb(161, 186, 209);
         
         position: absolute;
         left:100px;
         top:40px;
 
-        box-shadow: 0 4px 0px grey;
+        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -182,13 +176,12 @@ body>ul:first-child>li:nth-child(3) ul{
         height: 25px;
         background-color:white;
         margin: 0 auto;
-        box-shadow: 0px 0px 30px  rgb(161, 186, 209);
         
         position: absolute;
         left:150px;
         top:40px;
         
-        box-shadow: 0 4px 0px grey;
+        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -216,13 +209,12 @@ body>ul:first-child>li:nth-child(4) ul{
         height: 25px;
         background-color:white;
         margin: 0 auto;
-        box-shadow: 0px 4px 30px  rgb(161, 186, 209);
 
         position: absolute;
         top:0;
         left: 50px;
 
-        box-shadow: 0 4px 0px grey;
+        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -237,13 +229,12 @@ body>ul:first-child>li:nth-child(4) ul{
         height: 25px;
         background-color:white;
         margin: 0 auto;
-        box-shadow: 0px 0px 30px  rgb(161, 186, 209);
 
         position: absolute;
         top:0;
         left: 100px;
 
-        box-shadow: 0 4px 0px grey;
+        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -260,13 +251,11 @@ body>ul:first-child>li:nth-child(4) ul{
         background-color:white;
         margin: 0 auto;
         left: 150px;
-
-        box-shadow: 0px 0px 30px  rgb(161, 186, 209);
         
         position: absolute;
         top:0;
 
-        box-shadow: 0 4px 0px grey;
+        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -280,13 +269,12 @@ body>ul:first-child>li:nth-child(4) ul{
         height: 25px;
         background-color:white;
         margin: 0 auto;
-        box-shadow: 0px 0px 30px  rgb(161, 186, 209);
         
         position: absolute;
         left:50px;
         top:40px;
 
-        box-shadow: 0 4px 0px grey;
+        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -300,13 +288,12 @@ body>ul:first-child>li:nth-child(4) ul{
         height: 25px;
         background-color:white;
         margin: 0 auto;
-        box-shadow: 0px 0px 30px  rgb(161, 186, 209);
         
         position: absolute;
         left:100px;
         top:40px;
 
-        box-shadow: 0 4px 0px grey;
+        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -320,13 +307,12 @@ body>ul:first-child>li:nth-child(4) ul{
         height: 25px;
         background-color:white;
         margin: 0 auto;
-        box-shadow: 0px 0px 30px  rgb(161, 186, 209);
         
         position: absolute;
         left:150px;
         top:40px;
         
-        box-shadow: 0 4px 0px grey;
+        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
