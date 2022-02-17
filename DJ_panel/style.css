@@ -480,3 +480,22 @@ body>ul:nth-child(2) li:nth-child(4){
         left: 0em;
     }
 }
+
+body>ul:nth-child(3){
+    position: absolute;
+
+    background-image: url("images//discobal.png");
+    background-position: center;
+    background-size:cover;
+
+    margin: 0 auto;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    top: 6%;
+
+    width: 170px;
+    height: 200px;
+}
