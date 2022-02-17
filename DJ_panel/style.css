@@ -30,47 +30,63 @@ body>ul:first-child{
     position: relative;
     top: 60vh;
 
+    margin: 0 auto;
+    padding-left: 0;
+
     border: 15px solid rgb(46, 46, 46);
     box-shadow: 0px 50px 0px rgb(75, 75, 75);
 
     z-index: 10;
+    justify-content: center;
 }
 
 body>ul:first-child>li:first-child{
     background: rgb(128, 118, 118);
     border-radius: 50%;
 
+    margin: 0 auto;
+    padding-left: 0;
+    margin-left:5%;
+    margin-right: 0;
+    margin-top: 2%;
+
     width: 8vw;
     height: 8vw;
 
-    border: 8px solid rgb(161, 186, 209);
-    box-shadow: 0px 0px 30px  rgb(131, 138, 145);
+    box-shadow: 0px 2px 0px  rgb(24, 24, 24), 0px 5px 15px rgb(161, 186, 209);
 }
 
 body>ul:first-child>li:nth-child(2){
     background: rgb(128, 118, 118);
     border-radius: 50%;
 
+    margin: 0 auto;
+    padding-left: 0;
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-left: 0;
+
     width: 8vw;
     height: 8vw;
 
-    border: 8px solid rgb(161, 186, 209);
-    box-shadow: 0px 0px 30px  rgb(131, 138, 145);
+    box-shadow: 0px 2px 0px  rgb(24, 24, 24), 0px 5px 15px rgb(161, 186, 209);
 }
 
 /* CONTROL PANEL BUTTONS*/
 
 body>ul:first-child>li:nth-child(3) ul{
     display: flex;
-    flex-wrap:wrap;
-    margin-left: -9%;
 
     position: absolute;
 
     margin-top: -33px;
 
-    width: 150px;
-    height: 75px;
+    justify-content: center;
+
+    width: 50px;
+    height: 35px;
+
+    left:10%;
 }
 
     body>ul:first-child li:nth-child(3)>ul>li:first-child{
@@ -81,7 +97,7 @@ body>ul:first-child>li:nth-child(3) ul{
 
         position: absolute;
         top:0;
-        left: 50px;
+        left: 0px;
 
         box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
@@ -101,7 +117,7 @@ body>ul:first-child>li:nth-child(3) ul{
  
         position: absolute;
         top:0;
-        left: 100px;
+        left: 50%;
 
         box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
@@ -119,7 +135,7 @@ body>ul:first-child>li:nth-child(3) ul{
         height: 25px;
         background-color:white;
         margin: 0 auto;
-        left: 150px;
+        left: 100%;
         
         position: absolute;
         top:0;
@@ -140,8 +156,8 @@ body>ul:first-child>li:nth-child(3) ul{
         margin: 0 auto;
         
         position: absolute;
-        left:50px;
-        top:40px;
+        left:0;
+        top:100%;
 
         box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
@@ -159,8 +175,8 @@ body>ul:first-child>li:nth-child(3) ul{
         margin: 0 auto;
         
         position: absolute;
-        left:100px;
-        top:40px;
+        left:50%;
+        top:100%;
 
         box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
@@ -178,8 +194,8 @@ body>ul:first-child>li:nth-child(3) ul{
         margin: 0 auto;
         
         position: absolute;
-        left:150px;
-        top:40px;
+        left:100%;
+        top:100%;
         
         box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
@@ -193,15 +209,17 @@ body>ul:first-child>li:nth-child(3) ul{
 
 body>ul:first-child>li:nth-child(4) ul{
     display: flex;
-    flex-wrap:wrap;
-    margin-left: 93px;
 
     position: absolute;
 
     margin-top: -33px;
 
-    width: 150px;
-    height: 75px;
+    justify-content: center;
+
+    width: 50px;
+    height: 35px;
+
+    right:10%;
 }
 
     body>ul:first-child>li:nth-child(4) ul>li:first-child{
@@ -212,7 +230,7 @@ body>ul:first-child>li:nth-child(4) ul{
 
         position: absolute;
         top:0;
-        left: 50px;
+        right: 0;
 
         box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
@@ -232,7 +250,7 @@ body>ul:first-child>li:nth-child(4) ul{
 
         position: absolute;
         top:0;
-        left: 100px;
+        right: 50%;
 
         box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
@@ -250,7 +268,7 @@ body>ul:first-child>li:nth-child(4) ul{
         height: 25px;
         background-color:white;
         margin: 0 auto;
-        left: 150px;
+        right: 100%;
         
         position: absolute;
         top:0;
@@ -271,8 +289,8 @@ body>ul:first-child>li:nth-child(4) ul{
         margin: 0 auto;
         
         position: absolute;
-        left:50px;
-        top:40px;
+        right:0%;
+        top:100%;
 
         box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
@@ -290,8 +308,8 @@ body>ul:first-child>li:nth-child(4) ul{
         margin: 0 auto;
         
         position: absolute;
-        left:100px;
-        top:40px;
+        right:50%;
+        top:100%;
 
         box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
@@ -309,8 +327,8 @@ body>ul:first-child>li:nth-child(4) ul{
         margin: 0 auto;
         
         position: absolute;
-        left:150px;
-        top:40px;
+        right:100%;
+        top:100%;
         
         box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
