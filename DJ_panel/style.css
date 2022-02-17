@@ -7,17 +7,21 @@ body {
     margin: 0;
     padding: 0;
 
-    background: linear-gradient(0deg, #a37d7d7e, #af997a7c, #9fa78365, #7a977171, #71909285, #79869b73, #99758b6b, #8f759273);
+    background: linear-gradient(20deg, #ff0000, #ff9500, #ffee00, #3cff00, #00eeff, #fa009a, #e600ff);
     background-size: 1600% 1600%;
     background-color: black;
+
+    opacity: 0.9;
 
     animation: discoLight 3s ease infinite;
 }
 
 @keyframes discoLight {
-    0%{background-position:58% 0%}
-    50%{background-position:43% 100%}
-    100%{background-position:58% 0%}
+    0%{background-position:0%}
+    25%{background-position:50%}
+    50%{background-position:100%}
+    75%{background-position:50%}
+    100%{background-position:0%}
 }
 
 li{
@@ -496,6 +500,10 @@ body>ul:nth-child(3){
     padding: 0;
     top: 6%;
 
-    width: 170px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(122, 122, 122, 0.9);
+
+    border-radius:50%;
+    box-shadow: 0px 0px 100px 100px white, inset  0px 0px 100px 20px white;
 }
