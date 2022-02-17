@@ -36,7 +36,7 @@ body>ul:first-child{
     flex-wrap: wrap;
     column-gap: 130px;
     
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(20, 20, 20);
     
     position: relative;
     top: 60vh;
@@ -44,8 +44,8 @@ body>ul:first-child{
     margin: 0 auto;
     padding-left: 0;
 
-    border: 15px solid rgb(46, 46, 46);
-    box-shadow: 0px 50px 0px rgb(75, 75, 75);
+    border: 2px solid rgb(78, 78, 78);
+    box-shadow: 0px 50px 0px rgb(19, 19, 19);
 
     z-index: 10;
     justify-content: center;
@@ -64,8 +64,16 @@ body>ul:first-child>li:first-child{
     width: 8vw;
     height: 8vw;
 
-    box-shadow: 0px 2px 0px  rgb(24, 24, 24), 0px 5px 15px rgb(161, 186, 209);
-}
+    background: repeating-radial-gradient(
+        circle,
+        #333233 1px,
+        #333233 2px,
+        rgb(19, 19, 19) 0px, 
+        rgb(19, 19, 19) 5px
+      );
+
+      box-shadow: 0px 4px 0px  rgb(0, 0, 0), 0px 5px 15px rgb(161, 186, 209);
+    }
 
 body>ul:first-child>li:nth-child(2){
     background: rgb(128, 118, 118);
@@ -80,7 +88,15 @@ body>ul:first-child>li:nth-child(2){
     width: 8vw;
     height: 8vw;
 
-    box-shadow: 0px 2px 0px  rgb(24, 24, 24), 0px 5px 15px rgb(161, 186, 209);
+    background: repeating-radial-gradient(
+        circle,
+        #333233 1px,
+        #333233 2px,
+        rgb(19, 19, 19) 0px, 
+        rgb(19, 19, 19) 5px
+      );
+
+    box-shadow: 0px 4px 0px  rgb(0, 0, 0), 0px 5px 15px rgb(161, 186, 209);
 }
 
 /* CONTROL PANEL BUTTONS*/
@@ -90,7 +106,7 @@ body>ul:first-child>li:nth-child(3) ul{
 
     position: absolute;
 
-    margin-top: -33px;
+    margin-top: -30px;
 
     justify-content: center;
 
@@ -103,14 +119,16 @@ body>ul:first-child>li:nth-child(3) ul{
     body>ul:first-child li:nth-child(3)>ul>li:first-child{
         width: 25px;
         height: 25px;
-        background-color:white;
+        background-color:rgb(83, 83, 83);
         margin: 0 auto;
 
         position: absolute;
         top:0;
         left: 0px;
 
-        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
+        border-radius: 20%;
+
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -123,14 +141,16 @@ body>ul:first-child>li:nth-child(3) ul{
     body>ul:first-child li:nth-child(3) ul li:nth-child(2){
         width: 25px;
         height: 25px;
-        background-color:white;
+        background-color:rgb(83, 83, 83);
         margin: 0 auto;
  
         position: absolute;
         top:0;
         left: 50%;
 
-        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
+        border-radius: 20%;
+
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -144,14 +164,16 @@ body>ul:first-child>li:nth-child(3) ul{
     body>ul:first-child li:nth-child(3) ul li:nth-child(3){
         width: 25px;
         height: 25px;
-        background-color:white;
+        background-color:rgb(83, 83, 83);
         margin: 0 auto;
         left: 100%;
         
         position: absolute;
         top:0;
 
-        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
+        border-radius: 20%;
+
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -163,14 +185,16 @@ body>ul:first-child>li:nth-child(3) ul{
     body>ul:first-child li:nth-child(3) ul li:nth-child(4){
         width: 25px;
         height: 25px;
-        background-color:white;
+        background-color:rgb(83, 83, 83);
         margin: 0 auto;
         
         position: absolute;
         left:0;
         top:100%;
 
-        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
+        border-radius: 20%;
+
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -182,14 +206,16 @@ body>ul:first-child>li:nth-child(3) ul{
     body>ul:first-child li:nth-child(3) ul li:nth-child(5){
         width: 25px;
         height: 25px;
-        background-color:white;
+        background-color:rgb(83, 83, 83);
         margin: 0 auto;
         
         position: absolute;
         left:50%;
         top:100%;
 
-        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
+        border-radius: 20%;
+
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -201,14 +227,16 @@ body>ul:first-child>li:nth-child(3) ul{
     body>ul:first-child li:nth-child(3) ul li:nth-child(6){
         width: 25px;
         height: 25px;
-        background-color:white;
+        background-color:rgb(83, 83, 83);
         margin: 0 auto;
         
         position: absolute;
         left:100%;
         top:100%;
         
-        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
+        border-radius: 20%;
+        
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -223,7 +251,7 @@ body>ul:first-child>li:nth-child(4) ul{
 
     position: absolute;
 
-    margin-top: -33px;
+    margin-top: -30px;
 
     justify-content: center;
 
@@ -236,14 +264,16 @@ body>ul:first-child>li:nth-child(4) ul{
     body>ul:first-child>li:nth-child(4) ul>li:first-child{
         width: 25px;
         height: 25px;
-        background-color:white;
+        background-color:rgb(83, 83, 83);
         margin: 0 auto;
 
         position: absolute;
         top:0;
         right: 0;
 
-        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
+        border-radius: 20%;
+
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -256,14 +286,16 @@ body>ul:first-child>li:nth-child(4) ul{
     body>ul:first-child>li:nth-child(4) ul li:nth-child(2){
         width: 25px;
         height: 25px;
-        background-color:white;
+        background-color:rgb(83, 83, 83);
         margin: 0 auto;
 
         position: absolute;
         top:0;
         right: 50%;
 
-        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
+        border-radius: 20%;
+
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -277,14 +309,16 @@ body>ul:first-child>li:nth-child(4) ul{
     body>ul:first-child>li:nth-child(4) ul li:nth-child(3){
         width: 25px;
         height: 25px;
-        background-color:white;
+        background-color:rgb(83, 83, 83);
         margin: 0 auto;
         right: 100%;
         
         position: absolute;
         top:0;
 
-        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
+        border-radius: 20%;
+
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -296,14 +330,16 @@ body>ul:first-child>li:nth-child(4) ul{
     body>ul:first-child li:nth-child(4) ul li:nth-child(4){
         width: 25px;
         height: 25px;
-        background-color:white;
+        background-color:rgb(83, 83, 83);
         margin: 0 auto;
         
         position: absolute;
         right:0%;
         top:100%;
 
-        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
+        border-radius: 20%;
+
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -315,14 +351,16 @@ body>ul:first-child>li:nth-child(4) ul{
     body>ul:first-child li:nth-child(4) ul li:nth-child(5){
         width: 25px;
         height: 25px;
-        background-color:white;
+        background-color:rgb(83, 83, 83);
         margin: 0 auto;
         
         position: absolute;
         right:50%;
         top:100%;
 
-        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
+        border-radius: 20%;
+
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
@@ -334,14 +372,16 @@ body>ul:first-child>li:nth-child(4) ul{
     body>ul:first-child li:nth-child(4) ul li:nth-child(6){
         width: 25px;
         height: 25px;
-        background-color:white;
+        background-color:rgb(83, 83, 83);
         margin: 0 auto;
         
         position: absolute;
         right:100%;
         top:100%;
+
+        border-radius: 20%;
         
-        box-shadow: 0 4px 0px grey, 0px 4px 30px  rgb(161, 186, 209);
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
         transition: all ease 0.4s;
     }
 
