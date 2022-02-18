@@ -11,9 +11,26 @@ Interaction ideas:
 - Maybe move the circle pads
 - Add some fun sounds to some buttons
 
-I also want to implement some small details if I have the time. 
+I also want to implement some small details if I have the time.
 Detail ideas:
 - Cursor is a headset or some other icon
 
 
-#Week 1 ~ making the concept
+# Week 1 ~ Making the concept
+To start with the end project I first decided I wanted to work with a interactive control panel. I chose this because I thought this would be nice in combination with my game development, plus you had a lot of freedom on what to make. 
+The second thing for me to do was sketching. I needed to have an idea on what I wanted to make. So I thought of different ideas and drew them out, see pictures below. 
+
+!<img src="https://user-images.githubusercontent.com/44086608/154667193-96b281ac-8ed6-412b-ba8a-4073e3e138e4.jpg" width="400" height="300"> !<img src="https://user-images.githubusercontent.com/44086608/154667192-15966f4e-a052-484f-8645-43afebe49e3f.jpg" width="400" height="300">
+
+I chose my first idea of the DJ control panel. The reason why is because the control panel is easy to implement because a dj already has one. Plus you can have so much interactions with it. 
+
+# Week 2 ~ Styling the page
+My focus for this week was to create the scene without any interactions first. I wanted to start with the styling and see how it would turn out. 
+The result was this at the end of the week:
+
+https://user-images.githubusercontent.com/44086608/154668674-b66bdfa5-eb13-4d03-b484-77360bf2e13f.mp4
+
+I'm happy with how it looks, but sadly it isn't responsive yet. I found out that my weakness in CSS lays with creating the layout and making it responsive. 
+
+
+
