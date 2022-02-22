@@ -32,5 +32,12 @@ https://user-images.githubusercontent.com/44086608/154668674-b66bdfa5-eb13-4d03-
 
 I'm happy with how it looks, but sadly it isn't responsive yet. I found out that my weakness in CSS lays with creating the layout and making it responsive. 
 
+The things that I struggled with is as I said making it responsive. I got a tip from a teacher to use grid instead of flex for the dj panel so that it alligns the empty spaces according to the screen size.
+
+https://user-images.githubusercontent.com/44086608/155135470-770b56dc-be58-468a-8f85-e8b8d573a1f4.mp4
+
+The second thing I struggled with was the on click with my buttons. For some reason if I clicked the button, the others would move as well, see video below. After a while I finally knew what was happening. It is a flex so if one button moves down the buttons below it move as well. 
+
+https://user-images.githubusercontent.com/44086608/155136853-e3752ee8-e735-43ff-9dcf-5c6d8b3523fa.mp4
 
 
