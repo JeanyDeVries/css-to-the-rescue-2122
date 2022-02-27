@@ -1,5 +1,5 @@
 body {
-    overflow: hidden;
+        overflow: hidden;
 
     width: 100%;
     height: 100%;
@@ -507,3 +507,199 @@ body>ul:nth-child(3){
     border-radius:50%;
     box-shadow: 0px 0px 100px 100px white, inset  0px 0px 100px 20px white;
 }
+
+
+
+
+
+
+
+/* Disco ball */
+article {
+	--maat: min(50vmin, 10em);
+	--hang-maat:calc(var(--maat));
+	
+	width:var(--maat);
+	aspect-ratio:1/1;
+	
+	position:absolute;
+	top:50px;
+	left:calc(50% - var(--maat) / 2);
+	
+	border-radius:50%;
+	box-shadow:
+	    calc(var(--maat) / -6) 0 calc(var(--maat) / 3) rgb(255, 255, 255),
+		calc(var(--maat) / 6) 0 calc(var(--maat) / 3) rgb(255, 255, 255);
+	
+	transform-origin:center calc(var(--hang-maat) * -1);
+	animation:swing 3s -2.5s infinite alternate ease-in-out;
+}
+
+@keyframes swing {
+	0% {
+		transform: rotate(-2deg);
+	}
+	100% {
+		transform: rotate(2deg);
+	}
+}
+
+
+/* touwtje */
+article::before {
+	content:"";
+	position:absolute;
+	left:calc(50% - 1px);
+	bottom:100%;
+	width:2px;
+	height:var(--hang-maat);
+	background-color:#632;
+}
+
+
+/* schaduw en highlights */
+article::after {
+	content:"";
+	position:absolute;
+	inset:0;
+	background-image:
+		/* hightlights */
+		radial-gradient(
+			farthest-corner circle at 40% 22.5%,
+			#fffc,
+			#fff0 20%
+		),
+		radial-gradient(
+			farthest-corner circle at 25% 35%,
+			#fffc,
+			#fff0 30%
+		),
+		/* schaduw */
+		radial-gradient(
+			farthest-corner at 25% 25%,
+			#0000 40%,
+			#0009 70%
+		),
+		/* shimmers */
+		linear-gradient(
+			70deg,
+			#fff0 40%,
+			#fff9,
+			#fff0 70%
+		),
+		linear-gradient(
+		 85deg,
+			#fff0 40%,
+			#fff6,
+			#fff0 50%
+		);
+	
+	background-size:
+		/* highlights & schaduw */
+		cover,
+		cover,
+		cover,
+		/* shimmers */
+		300% 100%,
+	  300% 100%;
+	border-radius:inherit;
+	
+	animation: shimmer 5s infinite ease-in-out;
+}
+
+@keyframes shimmer {
+	0% {
+		background-position:right top;
+	}
+	100% {
+		background-position:left top;
+	}
+}
+
+/* spiegeltjes wrapper */
+article div {
+	position:relative;
+	width:100%;
+	height:100%;
+	
+	border-radius:50%;
+
+	-webkit-mask:radial-gradient(closest-side, red 100%, transparent 100%);
+	mask:radial-gradient(closest-side, red 100%, transparent 100%);
+}
+	
+
+/* spiegeltjes */
+article ul {
+	width:400%;
+	height:100%;
+
+	margin:0;
+	padding:0;
+	
+	display:flex;
+	flex-wrap:wrap;
+	
+	list-style:none;
+	
+	animation: move 30s -15s infinite ease-in-out alternate;
+}
+
+@keyframes move {
+	0% {
+		transform:translatex(0);
+	}
+	100% {
+		transform:translatex( -50% );
+	}
+}
+
+
+/* een spiegeltje */
+article li {
+	flex-grow:1;
+	border:solid calc(var(--maat) / 512) #0006;
+}
+
+article li:nth-of-type(n)   { width: calc(4%    / 4);  background-color:#ccc; }
+article li:nth-of-type(2n)  { width: calc(5.5%  / 4);  background-color:#ddd; }
+article li:nth-of-type(3n)  { width: calc(5%    / 4);  background-color:#bbb; }
+article li:nth-of-type(5n)  { width: calc(4.5%  / 4);  background-color:#ccc; }
+article li:nth-of-type(7n)  { width: calc(4.25% / 4);  background-color:#ddd; }
+article li:nth-of-type(11n) { width: calc(6%    / 4);  background-color:#bbb; }
+article li:nth-of-type(13n) { width: calc(5.25% / 4);  background-color:#ccc; }
+article li:nth-of-type(15n) { width: calc(4.75% / 4);  background-color:#ddd; }
+article li:nth-of-type(16n) { width: calc(5.75% / 4);  background-color:#bbb; }
+
+
+article li:nth-of-type(40)  { height:0.5%; }
+article li:nth-of-type(120)  { height:0.8%; }
+article li:nth-of-type(200)  { height:1.7%; }
+article li:nth-of-type(280)  { height:2.4%; }
+article li:nth-of-type(360)  { height:2.9%; }
+article li:nth-of-type(440) { height:3.2%; }
+article li:nth-of-type(520) { height:3.5%; }
+article li:nth-of-type(600) { height:3.7%; }
+article li:nth-of-type(680) { height:3.9%; }
+article li:nth-of-type(760) { height:4.0%; }
+article li:nth-of-type(840) { height:4.1%; }
+article li:nth-of-type(920) { height:4.2%; }
+article li:nth-of-type(1000) { height:4.3%; }
+article li:nth-of-type(1080) { height:4.3%; }
+article li:nth-of-type(1160) { height:4.3%; }
+article li:nth-of-type(1240) { height:4.4%; }
+article li:nth-of-type(1320) { height:4.3%; }
+article li:nth-of-type(1400) { height:4.3%; }
+article li:nth-of-type(1480) { height:4.3%; }
+article li:nth-of-type(1560) { height:4.2%; }
+article li:nth-of-type(1640) { height:4.1%; }
+article li:nth-of-type(1720) { height:4.0%; }
+article li:nth-of-type(1800) { height:3.9%; }
+article li:nth-of-type(1880) { height:3.7%; }
+article li:nth-of-type(1960) { height:3.5%; }
+article li:nth-of-type(2040) { height:3.2%; }
+article li:nth-of-type(2120) { height:2.9%; }
+article li:nth-of-type(2200) { height:2.4%; }
+article li:nth-of-type(2280) { height:1.7%; }
+article li:nth-of-type(2360) { height:0.8%; }
+article li:nth-of-type(2440) { height:0.5%; }
