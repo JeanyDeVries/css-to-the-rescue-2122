@@ -41,7 +41,7 @@ body>ul:first-child{
     height: 40%;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: minmax(0, 1fr) 50%;
     
     background-color: rgb(20, 20, 20);
     
@@ -49,26 +49,24 @@ body>ul:first-child{
     top: 60vh;
 
     margin: 0 auto;
-    padding-left: 0;
+    padding: 0;
     padding-bottom: 2%;
 
     border: 2px solid rgb(78, 78, 78);
     box-shadow: 0px 50px 0px rgb(19, 19, 19);
 
     z-index: 10;
-    justify-content: center;
 }
 
 body>ul:first-child>li:first-child{
     background: rgb(128, 118, 118);
     border-radius: 50%;
 
-    float:left;
-    margin-left: 25%;
+    justify-self: center;
     margin-top: 2%;
 
-    width: 8vw;
-    height: 8vw;
+    width: 150px;
+    height: 150px;
 
     background: repeating-radial-gradient(
         circle,
@@ -79,18 +77,17 @@ body>ul:first-child>li:first-child{
       );
 
     box-shadow: 0px 4px 0px  rgb(0, 0, 0), 0px 5px 15px rgb(161, 186, 209);
-    }
+}
 
 body>ul:first-child>li:nth-child(2){
     background: rgb(128, 118, 118);
     border-radius: 50%;
 
-    float:right;
-    margin-right: 25%;
+    justify-self: center;
     margin-top: 2%;
 
-    width: 8vw;
-    height: 8vw;
+    width: 150px;
+    height: 150px;
 
     background: repeating-radial-gradient(
         circle,
@@ -119,11 +116,11 @@ body>ul:first-child>li:nth-child(3) ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 5vh;
+    margin-top: 10px;
     grid-gap: 5px;
     padding: 0;
 
-    align-items: center;
-    justify-content: center;
+    align-self: center;
 }
 
     body>ul:first-child li:nth-child(3)>ul>li:first-child{
@@ -240,11 +237,11 @@ body>ul:first-child>li:nth-child(4) ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 5vh;
+    margin-top: 10px;
     grid-gap: 5px;
     padding: 0;
 
-    align-items: center;
-    justify-content: center;
+    align-self: center;
 }
 
     body>ul:first-child li:nth-child(4)>ul>li:first-child{
