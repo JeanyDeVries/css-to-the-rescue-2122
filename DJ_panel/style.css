@@ -116,7 +116,7 @@ body>ul:first-child>li:nth-child(3) ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 5vh;
-    margin-top: 10px;
+    margin-top: 15px;
     grid-gap: 5px;
     padding: 0;
 
@@ -237,7 +237,7 @@ body>ul:first-child>li:nth-child(4) ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 5vh;
-    margin-top: 10px;
+    margin-top: 15px;
     grid-gap: 5px;
     padding: 0;
 
