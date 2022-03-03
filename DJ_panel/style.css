@@ -1,3 +1,6 @@
+:root {
+  }
+
 *{
     box-sizing: border-box;
 }
@@ -15,7 +18,8 @@ body {
     background-size: 1600% 1600%;
     background-color: black;
 
-    opacity: 0.9;
+    opacity: var(--transparencyLight);
+    --transparencyLight: 0.98;
 
     animation: discoLight 3s ease infinite;
 }
@@ -137,6 +141,8 @@ body>ul:first-child>li:nth-child(3) ul{
     body>ul:first-child li:nth-child(3)>ul>li:first-child:active{
         box-shadow: none;
         margin-top: 4px;
+
+        --transparencyLight: 0.5;
     }
 
 
@@ -244,16 +250,16 @@ body>ul:first-child>li:nth-child(4) ul{
     align-self: center;
 }
 
-    body>ul:first-child li:nth-child(4)>ul>li:first-child{
-        width: 25px;
-        height: 25px;
-        background-color:rgb(83, 83, 83);
+body>ul:first-child li:nth-child(4)>ul>li:first-child{
+    width: 25px;
+    height: 25px;
+    background-color:rgb(83, 83, 83);
 
-        border-radius: 20%;
+    border-radius: 20%;
 
-        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
-        transition: all ease 0.4s;
-    }
+    box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
+    transition: all ease 0.4s;
+}
         
 
     body>ul:first-child>li:nth-child(4) ul>li:first-child{
