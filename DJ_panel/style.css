@@ -7,6 +7,7 @@
 }
 
 body {
+    position: relative;
     overflow: hidden;
 
     width: 100%;
@@ -22,6 +23,7 @@ main{
 
     margin: 0;
     padding: 0;
+    margin-top: -100px;
 
     background: linear-gradient(20deg, #ff0000, #ff9500, #ffee00, #3cff00, #00eeff, #fa009a, #e600ff);
     background-size: 1600% 1600%;
@@ -445,7 +447,7 @@ ul:nth-child(2) li:nth-child(4){
     bottom: 0;
 
     width: 100%;
-    height: 20%;
+    height: 30%;
 }
 
 @keyframes moveCrowd {
