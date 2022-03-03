@@ -1,4 +1,5 @@
 :root {
+    --transparencyLight: 0.98;
   }
 
 *{
@@ -19,7 +20,6 @@ body {
     background-color: black;
 
     opacity: var(--transparencyLight);
-    --transparencyLight: 0.98;
 
     animation: discoLight 3s ease infinite;
 }
@@ -37,8 +37,7 @@ li{
 }
 
 /* CONTROL PANEL*/
-
-body>ul:first-child{
+ul:first-child{
     margin: 0 auto;
 
     width: 30%;
@@ -62,7 +61,7 @@ body>ul:first-child{
     z-index: 10;
 }
 
-body>ul:first-child>li:first-child{
+ul:first-child>li:first-child{
     background: rgb(128, 118, 118);
     border-radius: 50%;
 
@@ -83,7 +82,7 @@ body>ul:first-child>li:first-child{
     box-shadow: 0px 4px 0px  rgb(0, 0, 0), 0px 5px 15px rgb(161, 186, 209);
 }
 
-body>ul:first-child>li:nth-child(2){
+ul:first-child>li:nth-child(2){
     background: rgb(128, 118, 118);
     border-radius: 50%;
 
@@ -106,7 +105,7 @@ body>ul:first-child>li:nth-child(2){
 
 /* CONTROL PANEL BUTTONS*/
 
-body>ul:first-child>li:nth-child(3){
+ul:first-child>li:nth-child(3){
     float:left;
 
     width: 50%;
@@ -116,7 +115,7 @@ body>ul:first-child>li:nth-child(3){
     padding: 0;
 }
 
-body>ul:first-child>li:nth-child(3) ul{
+ul:first-child>li:nth-child(3) ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 5vh;
@@ -127,26 +126,7 @@ body>ul:first-child>li:nth-child(3) ul{
     align-self: center;
 }
 
-    body>ul:first-child li:nth-child(3)>ul>li:first-child{
-        width: 25px;
-        height: 25px;
-        background-color:rgb(83, 83, 83);
-
-        border-radius: 20%;
-
-        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
-        transition: all ease 0.4s;
-    }
-
-    body>ul:first-child li:nth-child(3)>ul>li:first-child:active{
-        box-shadow: none;
-        margin-top: 4px;
-
-        --transparencyLight: 0.5;
-    }
-
-
-    body>ul:first-child li:nth-child(3) ul li:nth-child(2){
+    ul:first-child li:nth-child(3)>ul>li:first-child{
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -158,13 +138,15 @@ body>ul:first-child>li:nth-child(3) ul{
     }
 
     
-    body>ul:first-child li:nth-child(3)>ul>li:nth-child(2):active{
+    input::nth-child(1).check ~ body{
         box-shadow: none;
         margin-top: 4px;
+
+        --transparencyLight: 0.5;
     }
 
 
-    body>ul:first-child li:nth-child(3) ul li:nth-child(3){
+    ul:first-child li:nth-child(3) ul li:nth-child(2){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -175,12 +157,14 @@ body>ul:first-child>li:nth-child(3) ul{
         transition: all ease 0.4s;
     }
 
-    body>ul:first-child li:nth-child(3)>ul>li:nth-child(3):active{
+    
+    ul:first-child li:nth-child(3)>ul>li:nth-child(2):active{
         box-shadow: none;
         margin-top: 4px;
     }
 
-    body>ul:first-child li:nth-child(3) ul li:nth-child(4){
+
+    ul:first-child li:nth-child(3) ul li:nth-child(3){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -191,12 +175,12 @@ body>ul:first-child>li:nth-child(3) ul{
         transition: all ease 0.4s;
     }
 
-    body>ul:first-child li:nth-child(3)>ul>li:nth-child(4):active{
+    ul:first-child li:nth-child(3)>ul>li:nth-child(3):active{
         box-shadow: none;
         margin-top: 4px;
     }
 
-    body>ul:first-child li:nth-child(3) ul li:nth-child(5){
+    ul:first-child li:nth-child(3) ul li:nth-child(4){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -207,12 +191,28 @@ body>ul:first-child>li:nth-child(3) ul{
         transition: all ease 0.4s;
     }
 
-    body>ul:first-child li:nth-child(3)>ul>li:nth-child(5):active{
+    ul:first-child li:nth-child(3)>ul>li:nth-child(4):active{
         box-shadow: none;
         margin-top: 4px;
     }
 
-    body>ul:first-child li:nth-child(3) ul li:nth-child(6){
+    ul:first-child li:nth-child(3) ul li:nth-child(5){
+        width: 25px;
+        height: 25px;
+        background-color:rgb(83, 83, 83);
+
+        border-radius: 20%;
+
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
+        transition: all ease 0.4s;
+    }
+
+    ul:first-child li:nth-child(3)>ul>li:nth-child(5):active{
+        box-shadow: none;
+        margin-top: 4px;
+    }
+
+    ul:first-child li:nth-child(3) ul li:nth-child(6){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -223,13 +223,13 @@ body>ul:first-child>li:nth-child(3) ul{
         transition: all ease 0.4s;
     }
 
-    body>ul:first-child li:nth-child(3)>ul>li:nth-child(6):active{
+    ul:first-child li:nth-child(3)>ul>li:nth-child(6):active{
         box-shadow: none;
         margin-top: 4px;
     }
 
 
-body>ul:first-child>li:nth-child(4){
+ul:first-child>li:nth-child(4){
     float:right;
 
     width: 50%;
@@ -239,7 +239,7 @@ body>ul:first-child>li:nth-child(4){
     padding: 0;
 }
 
-body>ul:first-child>li:nth-child(4) ul{
+ul:first-child>li:nth-child(4) ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 5vh;
@@ -250,7 +250,7 @@ body>ul:first-child>li:nth-child(4) ul{
     align-self: center;
 }
 
-body>ul:first-child li:nth-child(4)>ul>li:first-child{
+ul:first-child li:nth-child(4)>ul>li:first-child{
     width: 25px;
     height: 25px;
     background-color:rgb(83, 83, 83);
@@ -262,7 +262,7 @@ body>ul:first-child li:nth-child(4)>ul>li:first-child{
 }
         
 
-    body>ul:first-child>li:nth-child(4) ul>li:first-child{
+    ul:first-child>li:nth-child(4) ul>li:first-child{
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -277,13 +277,13 @@ body>ul:first-child li:nth-child(4)>ul>li:first-child{
         transition: all ease 0.4s;
     }
 
-    body>ul:first-child>li:nth-child(4) ul>li:first-child:active{
+    ul:first-child>li:nth-child(4) ul>li:first-child:active{
         box-shadow: none;
         margin-top: 4px;
     }
 
 
-    body>ul:first-child>li:nth-child(4) ul li:nth-child(2){
+    ul:first-child>li:nth-child(4) ul li:nth-child(2){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -299,13 +299,13 @@ body>ul:first-child li:nth-child(4)>ul>li:first-child{
     }
 
 
-    body>ul:first-child>li:nth-child(4) ul>li:nth-child(2):active{
+    ul:first-child>li:nth-child(4) ul>li:nth-child(2):active{
         box-shadow: none;
         margin-top: 4px;
     }
 
 
-    body>ul:first-child>li:nth-child(4) ul li:nth-child(3){
+    ul:first-child>li:nth-child(4) ul li:nth-child(3){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -320,12 +320,12 @@ body>ul:first-child li:nth-child(4)>ul>li:first-child{
         transition: all ease 0.4s;
     }
 
-    body>ul:first-child>li:nth-child(4) ul>li:nth-child(3):active{
+    ul:first-child>li:nth-child(4) ul>li:nth-child(3):active{
         box-shadow: none;
         margin-top: 4px;
     }
 
-    body>ul:first-child li:nth-child(4) ul li:nth-child(4){
+    ul:first-child li:nth-child(4) ul li:nth-child(4){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -340,12 +340,12 @@ body>ul:first-child li:nth-child(4)>ul>li:first-child{
         transition: all ease 0.4s;
     }
 
-    body>ul:first-child li:nth-child(4)>ul>li:nth-child(4):active{
+    ul:first-child li:nth-child(4)>ul>li:nth-child(4):active{
         box-shadow: none;
         margin-top: 4px;
     }
 
-    body>ul:first-child li:nth-child(4) ul li:nth-child(5){
+    ul:first-child li:nth-child(4) ul li:nth-child(5){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -360,12 +360,12 @@ body>ul:first-child li:nth-child(4)>ul>li:first-child{
         transition: all ease 0.4s;
     }
 
-    body>ul:first-child li:nth-child(4)>ul>li:nth-child(5):active{
+    ul:first-child li:nth-child(4)>ul>li:nth-child(5):active{
         box-shadow: none;
         margin-top: 4px;
     }
 
-    body>ul:first-child li:nth-child(4) ul li:nth-child(6){
+    ul:first-child li:nth-child(4) ul li:nth-child(6){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -380,14 +380,14 @@ body>ul:first-child li:nth-child(4)>ul>li:first-child{
         transition: all ease 0.4s;
     }
 
-    body>ul:first-child li:nth-child(4)>ul>li:nth-child(6):active{
+    ul:first-child li:nth-child(4)>ul>li:nth-child(6):active{
         box-shadow: none;
         margin-top: 4px;
     }
 
 
 /* CROWD*/
-body>ul:nth-child(2){
+ul:nth-child(2){
     margin: 0 auto;
     padding: 0%;
     position: absolute;
@@ -399,7 +399,7 @@ body>ul:nth-child(2){
     height: 60%;
 }
 
-body>ul:nth-child(2) li:first-child{
+ul:nth-child(2) li:first-child{
     background-image: url("images/crowd-layer3.png");
     background-position: center;
     background-repeat: repeat;
@@ -415,7 +415,7 @@ body>ul:nth-child(2) li:first-child{
     animation: moveCrowd 15s linear infinite;
 }
 
-body>ul:nth-child(2) li:nth-child(2){
+ul:nth-child(2) li:nth-child(2){
     background-image: url("images/crowd-layer2.png");
     background-position: center;
     background-repeat: repeat;
@@ -431,7 +431,7 @@ body>ul:nth-child(2) li:nth-child(2){
     animation: moveCrowd 10s linear infinite;
 }
 
-body>ul:nth-child(2) li:nth-child(3){
+ul:nth-child(2) li:nth-child(3){
     background-image: url("images/crowd-front.png");
     background-position: center;
     background-repeat: repeat;
@@ -447,7 +447,7 @@ body>ul:nth-child(2) li:nth-child(3){
     animation: moveCrowd 5s linear infinite;
 }
 
-body>ul:nth-child(2) li:nth-child(4){
+ul:nth-child(2) li:nth-child(4){
     background-color: black;
 
     position: fixed;
@@ -476,7 +476,7 @@ body>ul:nth-child(2) li:nth-child(4){
     }
 }
 
-body>ul:nth-child(3){
+ul:nth-child(3){
     position: absolute;
 
     background-image: url("images//discobal.png");
