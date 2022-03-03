@@ -104,7 +104,6 @@ ul:first-child>li:nth-child(2){
 }
 
 /* CONTROL PANEL BUTTONS*/
-
 ul:first-child>li:nth-child(3){
     float:left;
 
@@ -113,20 +112,17 @@ ul:first-child>li:nth-child(3){
 
     margin: 0 auto;
     padding: 0;
-}
 
-ul:first-child>li:nth-child(3) ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 5vh;
-    margin-top: 15px;
+    grid-template-rows: 4vh;
     grid-gap: 5px;
     padding: 0;
 
     align-self: center;
 }
 
-    ul:first-child li:nth-child(3)>ul>li:first-child{
+    ul:first-child li:nth-child(3) label:first-child{
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -138,7 +134,7 @@ ul:first-child>li:nth-child(3) ul{
     }
 
     
-    input::nth-child(1).check ~ body{
+    input:nth-child(1).checked > body{
         box-shadow: none;
         margin-top: 4px;
 
@@ -146,7 +142,7 @@ ul:first-child>li:nth-child(3) ul{
     }
 
 
-    ul:first-child li:nth-child(3) ul li:nth-child(2){
+    ul:first-child li:nth-child(3) label:nth-child(2){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -164,7 +160,7 @@ ul:first-child>li:nth-child(3) ul{
     }
 
 
-    ul:first-child li:nth-child(3) ul li:nth-child(3){
+    ul:first-child li:nth-child(3) label:nth-child(3){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -180,7 +176,7 @@ ul:first-child>li:nth-child(3) ul{
         margin-top: 4px;
     }
 
-    ul:first-child li:nth-child(3) ul li:nth-child(4){
+    ul:first-child li:nth-child(3) label:nth-child(4){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -196,7 +192,7 @@ ul:first-child>li:nth-child(3) ul{
         margin-top: 4px;
     }
 
-    ul:first-child li:nth-child(3) ul li:nth-child(5){
+    ul:first-child li:nth-child(3) label:nth-child(5){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -212,7 +208,7 @@ ul:first-child>li:nth-child(3) ul{
         margin-top: 4px;
     }
 
-    ul:first-child li:nth-child(3) ul li:nth-child(6){
+    ul:first-child li:nth-child(3) label:nth-child(6){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -230,39 +226,25 @@ ul:first-child>li:nth-child(3) ul{
 
 
 ul:first-child>li:nth-child(4){
-    float:right;
+    float:left;
 
     width: 50%;
     height: 20%;
 
     margin: 0 auto;
     padding: 0;
-}
 
-ul:first-child>li:nth-child(4) ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 5vh;
-    margin-top: 15px;
+    grid-template-rows: 4vh;
     grid-gap: 5px;
     padding: 0;
 
     align-self: center;
 }
 
-ul:first-child li:nth-child(4)>ul>li:first-child{
-    width: 25px;
-    height: 25px;
-    background-color:rgb(83, 83, 83);
 
-    border-radius: 20%;
-
-    box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
-    transition: all ease 0.4s;
-}
-        
-
-    ul:first-child>li:nth-child(4) ul>li:first-child{
+    ul:first-child li:nth-child(4) label:first-child{
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -283,7 +265,7 @@ ul:first-child li:nth-child(4)>ul>li:first-child{
     }
 
 
-    ul:first-child>li:nth-child(4) ul li:nth-child(2){
+    ul:first-child>li:nth-child(4) label:nth-child(2){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -299,13 +281,13 @@ ul:first-child li:nth-child(4)>ul>li:first-child{
     }
 
 
-    ul:first-child>li:nth-child(4) ul>li:nth-child(2):active{
+    ul:first-child>li:nth-child(4) label:nth-child(2):active{
         box-shadow: none;
         margin-top: 4px;
     }
 
 
-    ul:first-child>li:nth-child(4) ul li:nth-child(3){
+    ul:first-child>li:nth-child(4) label:nth-child(3){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -325,7 +307,7 @@ ul:first-child li:nth-child(4)>ul>li:first-child{
         margin-top: 4px;
     }
 
-    ul:first-child li:nth-child(4) ul li:nth-child(4){
+    ul:first-child li:nth-child(4) label:nth-child(4){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -345,7 +327,7 @@ ul:first-child li:nth-child(4)>ul>li:first-child{
         margin-top: 4px;
     }
 
-    ul:first-child li:nth-child(4) ul li:nth-child(5){
+    ul:first-child li:nth-child(4) label:nth-child(5){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -365,7 +347,7 @@ ul:first-child li:nth-child(4)>ul>li:first-child{
         margin-top: 4px;
     }
 
-    ul:first-child li:nth-child(4) ul li:nth-child(6){
+    ul:first-child li:nth-child(4) label:nth-child(6){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
