@@ -75,7 +75,7 @@ main > ul:first-child{
     display: grid;
     grid-template-columns: minmax(0, 1fr) 50%;
     
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(0, 0, 0);
     
     position: relative;
     top: 60vh;
@@ -85,14 +85,12 @@ main > ul:first-child{
     padding-bottom: 2%;
 
     border: 2px solid rgb(78, 78, 78);
-    box-shadow: 0px 50px 0px rgb(19, 19, 19);
+    box-shadow: 0px 5px 0px rgb(19, 19, 19);
 
     z-index: 10;
 }
 
 main > ul:first-child>li:first-child{
-    background: rgb(128, 118, 118);
-
     justify-self: center;
     margin-top: 2%;
 
@@ -102,19 +100,15 @@ main > ul:first-child>li:first-child{
 
     background: repeating-radial-gradient(
         circle,
-        #333233 1px,
-        #333233 2px,
-        rgb(19, 19, 19) 0px, 
-        rgb(19, 19, 19) 5px
+        #8a8989 1px,
+        #d8d8d8 3px
       );
 
-      box-shadow: 0px 0px 0px 2px  rgb(0, 0, 0), 0px 0px 20px rgb(161, 186, 209);
+      box-shadow: 0px 0px 0px 5px  rgb(105, 105, 105), inset 0 0 0 5px #78a7ff;
       animation: rotate var(--spinningSpeed) infinite linear;
 } 
 
 main > ul:first-child>li:nth-child(2){
-    background: rgb(128, 118, 118);
-
     justify-self: center;
     margin-top: 2%;
 
@@ -124,13 +118,11 @@ main > ul:first-child>li:nth-child(2){
 
     background: repeating-radial-gradient(
         circle,
-        #333233 1px,
-        #333233 2px,
-        rgb(19, 19, 19) 0px, 
-        rgb(19, 19, 19) 5px
+        #8a8989 1px,
+        #d8d8d8 3px
       );
 
-    box-shadow: 0px 0px 0px 2px  rgb(0, 0, 0), 0px 0px 20px rgb(161, 186, 209);
+    box-shadow: 0px 0px 0px 5px  rgb(105, 105, 105), inset 0 0 0 5px #78a7ff;
     animation: rotate var(--spinningSpeed) infinite linear;
 }
 
