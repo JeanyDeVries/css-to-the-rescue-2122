@@ -142,8 +142,8 @@ main > ul:first-child>li:nth-child(3){
 }
 
     main > ul:first-child li:nth-child(3) label:first-child{
-        width: 25px;
-        height: 25px;
+        width:calc(10vw / 6);
+        height:calc(10vw / 6);
         background-color:rgb(83, 83, 83);
 
         border-radius: 20%;
@@ -163,8 +163,8 @@ main > ul:first-child>li:nth-child(3){
     }
 
    main > ul:first-child li:nth-child(3) label:nth-child(2){
-        width: 25px;
-        height: 25px;
+        width:calc(10vw / 6);
+        height:calc(10vw / 6);
         background-color:rgb(83, 83, 83);
 
         border-radius: 20%;
@@ -180,8 +180,8 @@ main > ul:first-child>li:nth-child(3){
     }
 
     main > ul:first-child li:nth-child(3) label:nth-child(3){
-        width: 25px;
-        height: 25px;
+        width:calc(10vw / 6);
+        height:calc(10vw / 6);
         background-color:rgb(83, 83, 83);
 
         border-radius: 20%;
@@ -196,8 +196,8 @@ main > ul:first-child>li:nth-child(3){
     }
 
     ul:first-child li:nth-child(3) label:nth-child(4){
-        width: 25px;
-        height: 25px;
+        width:calc(10vw / 6);
+        height:calc(10vw / 6);
         background-color:rgb(83, 83, 83);
 
         border-radius: 20%;
@@ -212,8 +212,8 @@ main > ul:first-child>li:nth-child(3){
     }
 
     ul:first-child li:nth-child(3) label:nth-child(5){
-        width: 25px;
-        height: 25px;
+        width:calc(10vw / 6);
+        height:calc(10vw / 6);
         background-color:rgb(83, 83, 83);
 
         border-radius: 20%;
@@ -228,8 +228,8 @@ main > ul:first-child>li:nth-child(3){
     }
 
     ul:first-child li:nth-child(3) label:nth-child(6){
-        width: 25px;
-        height: 25px;
+        width:calc(10vw / 6);
+        height:calc(10vw / 6);
         background-color:rgb(83, 83, 83);
         
         border-radius: 20%;
@@ -264,8 +264,8 @@ main > ul:first-child>li:nth-child(4){
 
 
     ul:first-child li:nth-child(4) label:first-child{
-        width: 25px;
-        height: 25px;
+        width:calc(10vw / 6);
+        height:calc(10vw / 6);
         background-color:rgb(83, 83, 83);
         margin: 0 auto;
 
@@ -285,8 +285,8 @@ main > ul:first-child>li:nth-child(4){
 
 
     ul:first-child>li:nth-child(4) label:nth-child(2){
-        width: 25px;
-        height: 25px;
+        width:calc(10vw / 6);
+        height:calc(10vw / 6);
         background-color:rgb(83, 83, 83);
         margin: 0 auto;
 
@@ -307,8 +307,8 @@ main > ul:first-child>li:nth-child(4){
 
 
     ul:first-child>li:nth-child(4) label:nth-child(3){
-        width: 25px;
-        height: 25px;
+        width:calc(10vw / 6);
+        height:calc(10vw / 6);
         background-color:rgb(83, 83, 83);
         margin: 0 auto;
         right: 100%;
@@ -327,8 +327,8 @@ main > ul:first-child>li:nth-child(4){
     }
 
     ul:first-child li:nth-child(4) label:nth-child(4){
-        width: 25px;
-        height: 25px;
+        width:calc(10vw / 6);
+        height:calc(10vw / 6);
         background-color:rgb(83, 83, 83);
         margin: 0 auto;
         
@@ -347,8 +347,8 @@ main > ul:first-child>li:nth-child(4){
     }
 
     ul:first-child li:nth-child(4) label:nth-child(5){
-        width: 25px;
-        height: 25px;
+        width:calc(10vw / 6);
+        height:calc(10vw / 6);
         background-color:rgb(83, 83, 83);
         margin: 0 auto;
         
@@ -367,8 +367,8 @@ main > ul:first-child>li:nth-child(4){
     }
 
     ul:first-child li:nth-child(4) label:nth-child(6){
-        width: 25px;
-        height: 25px;
+        width:calc(10vw / 6);
+        height:calc(10vw / 6);
         background-color:rgb(83, 83, 83);
         margin: 0 auto;
         
@@ -392,9 +392,9 @@ ul:nth-child(2){
     margin: 0 auto;
     padding: 0%;
     position: absolute;
-    top: 10%;
+    top: 0;
 
-    display: inline-block;
+    display: block;
 
     width: 100%;
     height: 70%;
