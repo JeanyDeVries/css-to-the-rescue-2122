@@ -1,5 +1,5 @@
 :root {
-    --transparencyLight: 0.5;
+    --transparencyLight: 0.25;
     --animationSpeed: 4s;
   }
 
@@ -17,19 +17,30 @@ body {
 
 main{          
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
 
     margin: 0;
     padding: 0;
-    margin-top: -100px;
+}
+
+main::after {
+    content:"";
+    position: fixed;
+    top:0; left:0;
+    width:100vw;
+    height:100vh;
 
     background: linear-gradient(20deg, #ff0000, #ff9500, #ffee00, #3cff00, #00eeff, #fa009a, #e600ff);
     background-size: 1600% 1600%;
-    background-color: black;
+    /* background-color: black; */
 
     opacity: var(--transparencyLight);
 
     animation: discoLight var(--animationSpeed) ease infinite;
+
+    z-index: 9999;
+
+    pointer-events: none;
 }
 
 @keyframes discoLight {
@@ -45,7 +56,7 @@ li{
 }
 
 /* CONTROL PANEL*/
-ul:first-child{
+main > ul:first-child{
     margin: 0 auto;
 
     width: 30%;
@@ -69,15 +80,15 @@ ul:first-child{
     z-index: 10;
 }
 
-ul:first-child>li:first-child{
+main > ul:first-child>li:first-child{
     background: rgb(128, 118, 118);
-    border-radius: 50%;
 
     justify-self: center;
     margin-top: 2%;
 
-    width: 150px;
-    height: 150px;
+    width:calc(50vw / 6);
+    height:calc(50vw / 6);
+    border-radius:50%;
 
     background: repeating-radial-gradient(
         circle,
@@ -90,15 +101,15 @@ ul:first-child>li:first-child{
     box-shadow: 0px 4px 0px  rgb(0, 0, 0), 0px 5px 15px rgb(161, 186, 209);
 }
 
-ul:first-child>li:nth-child(2){
+main > ul:first-child>li:nth-child(2){
     background: rgb(128, 118, 118);
-    border-radius: 50%;
 
     justify-self: center;
     margin-top: 2%;
 
-    width: 150px;
-    height: 150px;
+    width:calc(50vw / 6);
+    height:calc(50vw / 6);
+    border-radius: 50%;
 
     background: repeating-radial-gradient(
         circle,
@@ -112,7 +123,7 @@ ul:first-child>li:nth-child(2){
 }
 
 /* CONTROL PANEL BUTTONS*/
-ul:first-child>li:nth-child(3){
+main > ul:first-child>li:nth-child(3){
     float:left;
 
     width: 50%;
@@ -130,7 +141,7 @@ ul:first-child>li:nth-child(3){
     align-self: center;
 }
 
-    ul:first-child li:nth-child(3) label:first-child{
+    main > ul:first-child li:nth-child(3) label:first-child{
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -148,10 +159,10 @@ ul:first-child>li:nth-child(3){
 
     input:nth-child(1):checked ~ main{
         --animationSpeed: 1s;
-        --transparencyLight: 1;
+        --transparencyLight: 0.6;
     }
 
-    ul:first-child li:nth-child(3) label:nth-child(2){
+   main > ul:first-child li:nth-child(3) label:nth-child(2){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -168,7 +179,7 @@ ul:first-child>li:nth-child(3){
         margin-top: 4px;
     }
 
-    ul:first-child li:nth-child(3) label:nth-child(3){
+    main > ul:first-child li:nth-child(3) label:nth-child(3){
         width: 25px;
         height: 25px;
         background-color:rgb(83, 83, 83);
@@ -233,7 +244,7 @@ ul:first-child>li:nth-child(3){
     }
 
 
-ul:first-child>li:nth-child(4){
+main > ul:first-child>li:nth-child(4){
     float:left;
 
     width: 50%;
@@ -501,8 +512,7 @@ article {
 	--hang-maat:calc(var(--maat));
 	
 	width:var(--maat);
-	aspect-ratio:1/1;
-	
+    aspect-ratio: 1/1;	
 	position:absolute;
 	top:50px;
 	left:calc(50% - var(--maat) / 2);
@@ -599,7 +609,7 @@ article::after {
 
 /* spiegeltjes wrapper */
 article div {
-	position:relative;
+	position:absolute;
 	width:100%;
 	height:100%;
 	
@@ -612,7 +622,7 @@ article div {
 
 /* spiegeltjes */
 article ul {
-	width:400%;
+    width:400%;
 	height:100%;
 
 	margin:0;
@@ -620,8 +630,10 @@ article ul {
 	
 	display:flex;
 	flex-wrap:wrap;
-		
-	animation: move 20s -15s infinite ease-in-out alternate;
+	
+	list-style:none;
+	
+	animation: move 30s -15s infinite ease-in-out alternate;
 }
 
 @keyframes move {
