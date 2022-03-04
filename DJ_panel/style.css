@@ -166,6 +166,7 @@ main > ul:first-child>li:nth-child(3){
         border-radius: 20%;
 
         box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonPurple);
+        box-shadow: inset 0 0 10px #2e2e2e;
         transition: all ease 0.4s;
     }
 
@@ -187,6 +188,7 @@ main > ul:first-child>li:nth-child(3){
         border-radius: 20%;
 
         box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonBlue);
+        box-shadow: inset 0 0 10px #2e2e2e;
         transition: all ease 0.4s;
     }
 
@@ -208,6 +210,7 @@ main > ul:first-child>li:nth-child(3){
         border-radius: 20%;
 
         box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonGreen);
+        box-shadow: inset 0 0 10px #2e2e2e;
         transition: all ease 0.4s;
     }
 
@@ -224,6 +227,7 @@ main > ul:first-child>li:nth-child(3){
         border-radius: 20%;
 
         box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonYellow);
+        box-shadow: inset 0 0 10px #2e2e2e;
         transition: all ease 0.4s;
     }
 
@@ -240,6 +244,7 @@ main > ul:first-child>li:nth-child(3){
         border-radius: 20%;
 
         box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonPurple);
+        box-shadow: inset 0 0 10px #2e2e2e;
         transition: all ease 0.4s;
     }
 
@@ -256,6 +261,7 @@ main > ul:first-child>li:nth-child(3){
         border-radius: 20%;
         
         box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonBlue);
+        box-shadow: inset 0 0 10px #2e2e2e;
         transition: all ease 0.4s;
     }
 
@@ -272,6 +278,7 @@ main > ul:first-child>li:nth-child(3){
         border-radius: 20%;
         
         box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonGreen);
+        box-shadow: inset 0 0 10px #2e2e2e;
         transition: all ease 0.4s;
     }
 
@@ -288,6 +295,7 @@ main > ul:first-child>li:nth-child(3){
         border-radius: 20%;
         
         box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonYellow);
+        box-shadow: inset 0 0 10px #2e2e2e;
         transition: all ease 0.4s;
     }
 
@@ -328,6 +336,7 @@ main > ul:first-child>li:nth-child(4){
         border-radius: 20%;
 
         box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonRed);
+        box-shadow: inset 0 0 10px #2e2e2e;
         transition: all ease 0.4s;
     }
 
@@ -349,6 +358,7 @@ main > ul:first-child>li:nth-child(4){
         border-radius: 20%;
 
         box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonPink);
+        box-shadow: inset 0 0 10px #2e2e2e;
         transition: all ease 0.4s;
     }
 
@@ -371,6 +381,7 @@ main > ul:first-child>li:nth-child(4){
         border-radius: 20%;
 
         box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonLightPurple);
+        box-shadow: inset 0 0 10px #2e2e2e;
         transition: all ease 0.4s;
     }
 
@@ -391,6 +402,7 @@ main > ul:first-child>li:nth-child(4){
         border-radius: 20%;
 
         box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonDarkPurple);
+        box-shadow: inset 0 0 10px #2e2e2e;
         transition: all ease 0.4s;
     }
 
@@ -411,6 +423,7 @@ main > ul:first-child>li:nth-child(4){
         border-radius: 20%;
 
         box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonRed);
+        box-shadow: inset 0 0 10px #2e2e2e;
         transition: all ease 0.4s;
     }
 
@@ -431,6 +444,7 @@ main > ul:first-child>li:nth-child(4){
         border-radius: 20%;
         
         box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonPink);
+        box-shadow: inset 0 0 10px #2e2e2e;
         transition: all ease 0.4s;
     }
 
@@ -451,6 +465,7 @@ main > ul:first-child>li:nth-child(4){
         border-radius: 20%;
         
         box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonLightPurple);
+        box-shadow: inset 0 0 10px #2e2e2e;
         transition: all ease 0.4s;
     }
 
@@ -471,6 +486,7 @@ main > ul:first-child>li:nth-child(4){
         border-radius: 20%;
         
         box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonDarkPurple);
+        box-shadow: inset 0 0 10px #2e2e2e;
         transition: all ease 0.4s;
     }
 
