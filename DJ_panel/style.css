@@ -60,7 +60,7 @@ main > ul:first-child{
     margin: 0 auto;
 
     width: 30%;
-    height: 30%;
+    height: calc(90vw / 6);
 
     display: grid;
     grid-template-columns: minmax(0, 1fr) 50%;
@@ -127,16 +127,16 @@ main > ul:first-child>li:nth-child(3){
     float:left;
 
     width: 50%;
-    height: 20%;
+    height: 28%;
 
     margin: 0 auto;
     padding: 0;
+    margin-bottom: calc(50vh / 6);
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 4vh;
     grid-gap: 5px;
-    padding: 0;
 
     align-self: center;
 }
@@ -248,16 +248,16 @@ main > ul:first-child>li:nth-child(4){
     float:left;
 
     width: 50%;
-    height: 20%;
+    height: 28%;
 
     margin: 0 auto;
     padding: 0;
+    margin-bottom: calc(50vh / 6);
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 4vh;
     grid-gap: 5px;
-    padding: 0;
 
     align-self: center;
 }
