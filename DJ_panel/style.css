@@ -1,6 +1,16 @@
 :root {
     --transparencyLight: 0.25;
     --animationSpeed: 4s;
+    --spinningSpeed: 5s;
+
+    --neonPurple: rgb(143, 23, 255);
+    --neonBlue: rgb(68, 185, 253);
+    --neonGreen: rgb(62, 247, 145);
+    --neonYellow: rgb(247, 244, 101);
+    --neonRed: rgb(253, 149, 30);
+    --neonPink: rgb(253, 43, 88);
+    --neonLightPurple: rgb(218, 107, 255);
+    --neonDarkPurple: rgb(173, 54, 252);
   }
 
 *{
@@ -98,8 +108,9 @@ main > ul:first-child>li:first-child{
         rgb(19, 19, 19) 5px
       );
 
-    box-shadow: 0px 4px 0px  rgb(0, 0, 0), 0px 5px 15px rgb(161, 186, 209);
-}
+      box-shadow: 0px 0px 0px 2px  rgb(0, 0, 0), 0px 0px 20px rgb(161, 186, 209);
+      animation: rotate var(--spinningSpeed) infinite linear;
+} 
 
 main > ul:first-child>li:nth-child(2){
     background: rgb(128, 118, 118);
@@ -119,7 +130,13 @@ main > ul:first-child>li:nth-child(2){
         rgb(19, 19, 19) 5px
       );
 
-    box-shadow: 0px 4px 0px  rgb(0, 0, 0), 0px 5px 15px rgb(161, 186, 209);
+    box-shadow: 0px 0px 0px 2px  rgb(0, 0, 0), 0px 0px 20px rgb(161, 186, 209);
+    animation: rotate var(--spinningSpeed) infinite linear;
+}
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
 }
 
 /* CONTROL PANEL BUTTONS*/
@@ -134,7 +151,7 @@ main > ul:first-child>li:nth-child(3){
     margin-bottom: calc(50vh / 6);
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 4vh;
     grid-gap: 5px;
 
@@ -144,11 +161,11 @@ main > ul:first-child>li:nth-child(3){
     main > ul:first-child li:nth-child(3) label:first-child{
         width:calc(10vw / 6);
         height:calc(10vw / 6);
-        background-color:rgb(83, 83, 83);
+        background-color:var(--neonPurple);
 
         border-radius: 20%;
 
-        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonPurple);
         transition: all ease 0.4s;
     }
 
@@ -165,11 +182,11 @@ main > ul:first-child>li:nth-child(3){
    main > ul:first-child li:nth-child(3) label:nth-child(2){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
-        background-color:rgb(83, 83, 83);
+        background-color:var(--neonBlue);
 
         border-radius: 20%;
 
-        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonBlue);
         transition: all ease 0.4s;
     }
 
@@ -179,14 +196,18 @@ main > ul:first-child>li:nth-child(3){
         margin-top: 4px;
     }
 
+    input:nth-child(2):checked ~ main{
+        --spinningSpeed: 1s;
+    }
+
     main > ul:first-child li:nth-child(3) label:nth-child(3){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
-        background-color:rgb(83, 83, 83);
+        background-color:var(--neonGreen);
 
         border-radius: 20%;
 
-        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonGreen);
         transition: all ease 0.4s;
     }
 
@@ -198,11 +219,11 @@ main > ul:first-child>li:nth-child(3){
     ul:first-child li:nth-child(3) label:nth-child(4){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
-        background-color:rgb(83, 83, 83);
+        background-color:var(--neonYellow);
 
         border-radius: 20%;
 
-        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonYellow);
         transition: all ease 0.4s;
     }
 
@@ -214,11 +235,11 @@ main > ul:first-child>li:nth-child(3){
     ul:first-child li:nth-child(3) label:nth-child(5){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
-        background-color:rgb(83, 83, 83);
+        background-color:var(--neonPurple);
 
         border-radius: 20%;
 
-        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonPurple);
         transition: all ease 0.4s;
     }
 
@@ -230,15 +251,47 @@ main > ul:first-child>li:nth-child(3){
     ul:first-child li:nth-child(3) label:nth-child(6){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
-        background-color:rgb(83, 83, 83);
+        background-color:var(--neonBlue);
         
         border-radius: 20%;
         
-        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonBlue);
         transition: all ease 0.4s;
     }
 
     input:nth-child(6):checked ~ main label:nth-child(6){
+        box-shadow: none;
+        margin-top: 4px;
+    }
+
+    ul:first-child li:nth-child(3) label:nth-child(7){
+        width:calc(10vw / 6);
+        height:calc(10vw / 6);
+        background-color:var(--neonGreen);
+        
+        border-radius: 20%;
+        
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonGreen);
+        transition: all ease 0.4s;
+    }
+
+    input:nth-child(7):checked ~ main label:nth-child(7){
+        box-shadow: none;
+        margin-top: 4px;
+    }
+
+    ul:first-child li:nth-child(3) label:nth-child(8){
+        width:calc(10vw / 6);
+        height:calc(10vw / 6);
+        background-color:var(--neonYellow);
+        
+        border-radius: 20%;
+        
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonYellow);
+        transition: all ease 0.4s;
+    }
+
+    input:nth-child(8):checked ~ main label:nth-child(8){
         box-shadow: none;
         margin-top: 4px;
     }
@@ -255,7 +308,7 @@ main > ul:first-child>li:nth-child(4){
     margin-bottom: calc(50vh / 6);
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 4vh;
     grid-gap: 5px;
 
@@ -266,7 +319,7 @@ main > ul:first-child>li:nth-child(4){
     ul:first-child li:nth-child(4) label:first-child{
         width:calc(10vw / 6);
         height:calc(10vw / 6);
-        background-color:rgb(83, 83, 83);
+        background-color: var(--neonRed);
         margin: 0 auto;
 
         top:0;
@@ -274,11 +327,11 @@ main > ul:first-child>li:nth-child(4){
 
         border-radius: 20%;
 
-        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonRed);
         transition: all ease 0.4s;
     }
 
-    input:nth-child(7):checked ~ main ul:first-child li:nth-child(4) label:nth-child(1){
+    input:nth-child(9):checked ~ main ul:first-child li:nth-child(4) label:nth-child(1){
         box-shadow: none;
         margin-top: 4px;
     }
@@ -287,7 +340,7 @@ main > ul:first-child>li:nth-child(4){
     ul:first-child>li:nth-child(4) label:nth-child(2){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
-        background-color:rgb(83, 83, 83);
+        background-color: var(--neonPink);
         margin: 0 auto;
 
         top:0;
@@ -295,12 +348,12 @@ main > ul:first-child>li:nth-child(4){
 
         border-radius: 20%;
 
-        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonPink);
         transition: all ease 0.4s;
     }
 
 
-    input:nth-child(8):checked ~ main ul:first-child li:nth-child(4) label:nth-child(2){
+    input:nth-child(10):checked ~ main ul:first-child li:nth-child(4) label:nth-child(2){
         box-shadow: none;
         margin-top: 4px;
     }
@@ -309,7 +362,7 @@ main > ul:first-child>li:nth-child(4){
     ul:first-child>li:nth-child(4) label:nth-child(3){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
-        background-color:rgb(83, 83, 83);
+        background-color: var(--neonLightPurple);
         margin: 0 auto;
         right: 100%;
         
@@ -317,11 +370,11 @@ main > ul:first-child>li:nth-child(4){
 
         border-radius: 20%;
 
-        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonLightPurple);
         transition: all ease 0.4s;
     }
 
-    input:nth-child(9):checked ~ main ul:first-child li:nth-child(4) label:nth-child(3){
+    input:nth-child(11):checked ~ main ul:first-child li:nth-child(4) label:nth-child(3){
         box-shadow: none;
         margin-top: 4px;
     }
@@ -329,7 +382,7 @@ main > ul:first-child>li:nth-child(4){
     ul:first-child li:nth-child(4) label:nth-child(4){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
-        background-color:rgb(83, 83, 83);
+        background-color: var(--neonDarkPurple);
         margin: 0 auto;
         
         right:0%;
@@ -337,11 +390,11 @@ main > ul:first-child>li:nth-child(4){
 
         border-radius: 20%;
 
-        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonDarkPurple);
         transition: all ease 0.4s;
     }
 
-    input:nth-child(10):checked ~ main ul:first-child li:nth-child(4) label:nth-child(4){
+    input:nth-child(12):checked ~ main ul:first-child li:nth-child(4) label:nth-child(4){
         box-shadow: none;
         margin-top: 4px;
     }
@@ -349,7 +402,7 @@ main > ul:first-child>li:nth-child(4){
     ul:first-child li:nth-child(4) label:nth-child(5){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
-        background-color:rgb(83, 83, 83);
+        background-color: var(--neonRed);
         margin: 0 auto;
         
         right:50%;
@@ -357,11 +410,11 @@ main > ul:first-child>li:nth-child(4){
 
         border-radius: 20%;
 
-        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonRed);
         transition: all ease 0.4s;
     }
 
-    input:nth-child(11):checked ~ main ul:first-child li:nth-child(4) label:nth-child(5){
+    input:nth-child(13):checked ~ main ul:first-child li:nth-child(4) label:nth-child(5){
         box-shadow: none;
         margin-top: 4px;
     }
@@ -369,7 +422,7 @@ main > ul:first-child>li:nth-child(4){
     ul:first-child li:nth-child(4) label:nth-child(6){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
-        background-color:rgb(83, 83, 83);
+        background-color: var(--neonPink);
         margin: 0 auto;
         
         right:100%;
@@ -377,11 +430,51 @@ main > ul:first-child>li:nth-child(4){
 
         border-radius: 20%;
         
-        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  rgb(161, 186, 209);
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonPink);
         transition: all ease 0.4s;
     }
 
-    input:nth-child(12):checked ~ main ul:first-child li:nth-child(4) label:nth-child(6){
+    input:nth-child(14):checked ~ main ul:first-child li:nth-child(4) label:nth-child(6){
+        box-shadow: none;
+        margin-top: 4px;
+    }
+
+    ul:first-child li:nth-child(4) label:nth-child(7){
+        width:calc(10vw / 6);
+        height:calc(10vw / 6);
+        background-color: var(--neonLightPurple);
+        margin: 0 auto;
+        
+        right:100%;
+        top:100%;
+
+        border-radius: 20%;
+        
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonLightPurple);
+        transition: all ease 0.4s;
+    }
+
+    input:nth-child(15):checked ~ main ul:first-child li:nth-child(4) label:nth-child(7){
+        box-shadow: none;
+        margin-top: 4px;
+    }
+
+    ul:first-child li:nth-child(4) label:nth-child(8){
+        width:calc(10vw / 6);
+        height:calc(10vw / 6);
+        background-color: var(--neonDarkPurple);
+        margin: 0 auto;
+        
+        right:100%;
+        top:100%;
+
+        border-radius: 20%;
+        
+        box-shadow: 0 4px 0px rgb(43, 42, 42), 0px 4px 30px  var(--neonDarkPurple);
+        transition: all ease 0.4s;
+    }
+
+    input:nth-child(16):checked ~ main ul:first-child li:nth-child(4) label:nth-child(8){
         box-shadow: none;
         margin-top: 4px;
     }
