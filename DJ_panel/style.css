@@ -242,6 +242,10 @@ main > ul:first-child>li:nth-child(3){
         margin-top: 4px;
     }
 
+    input:nth-child(4):checked ~ main > div{
+        display: block;
+    }
+
     ul:first-child li:nth-child(3) label:nth-child(5){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -863,3 +867,95 @@ article li:nth-of-type(2200) { height:2.4%; }
 article li:nth-of-type(2280) { height:1.7%; }
 article li:nth-of-type(2360) { height:0.8%; }
 article li:nth-of-type(2440) { height:0.5%; }
+
+
+
+
+/*Confetti*/
+main > div{
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    top:0;
+  }
+
+  main > div div {
+    top: -10vh;
+    width:calc(10vw/6);
+    height:calc(10vw/6);
+    position: absolute;
+    transform-origin: left top;
+    animation: confetti 5s ease-in-out -2s infinite;
+    border-radius: 50%;
+}
+
+  @keyframes confetti {
+    0% {
+      transform: rotateZ(15deg) rotateY(0deg) translate(0, 0);
+    }
+    25% {
+      transform: rotateZ(5deg) rotateY(360deg) translate(-2vw, 20vh);
+    }
+    50% {
+      transform: rotateZ(15deg) rotateY(720deg) translate(2vw, 60vh);
+    }
+    75% {
+      transform: rotateZ(5deg) rotateY(1080deg) translate(-4vw, 80vh);
+    }
+    100% {
+      transform: rotateZ(15deg) rotateY(1440deg) translate(4vw, 110vh);
+    }
+}
+
+main > div div:nth-child(1) {
+    left: 10%;
+    animation-delay: 0;
+    background-color: var(--neonBlue);
+  }
+  main > div div:nth-child(2) {
+    left: 20%;
+    animation-delay: -5s;
+    background-color: var(--neonDarkPurple);
+  }
+  main > div div:nth-child(3) {
+    left: 30%;
+    animation-delay: -3s;
+    background-color: var(--neonGreen);
+  }
+  main > div div:nth-child(4) {
+    left: 40%;
+    animation-delay: -2.5s;
+    background-color: var(--neonLightPurple);
+  }
+  main > div div:nth-child(5) {
+    left: 50%;
+    animation-delay: -4s;
+    background-color: var(--neonPink);
+  }
+  main > div div:nth-child(6) {
+    left: 60%;
+    animation-delay: -6s;
+    background-color: var(--neonPurple);
+  }
+  main > div div:nth-child(7) {
+    left: 70%;
+    animation-delay: -1.5s;
+    background-color: var(--neonRed);
+  }
+  main > div div:nth-child(8) {
+    left: 80%;
+    animation-delay: -2s;
+    background-color: var(--neonYellow);
+  }
+  main > div div:nth-child(9) {
+    left: 90%;
+    animation-delay: -3.5s;
+    background-color: var(--neonLightPurple);
+  }
+  main > div div:nth-child(10) {
+    left: 100%;
+    animation-delay: -2.5s;
+    background-color: var(--neonBlue);
+  }
