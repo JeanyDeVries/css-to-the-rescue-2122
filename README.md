@@ -40,4 +40,37 @@ The second thing I struggled with was the on click with my buttons. For some rea
 
 https://user-images.githubusercontent.com/44086608/155136853-e3752ee8-e735-43ff-9dcf-5c6d8b3523fa.mp4
 
+# Week 3 ~ Adding the interactions
+As you saw in week 2 I still hadn't made the site responsive and as this is a course of CSS it is an important case to have it working. The first step I had to do was change from flex to grid. This way it would scale nicely together. After that has been done, it still wasn't perfect. After fooling around I found out that using the calc function was the best way to make it work. I used the view width in this case. It's still not perfect, but for me who has a little knowledge of CSS makes me already a bit happy with the result. It does need some tweaking off course, but I don't know if I'll have time for it. 
+
+https://user-images.githubusercontent.com/44086608/156917795-22de7d6f-7a3a-46e5-aa21-e084dfc940dd.mp4
+
+The second thing that did not work the way I wanted was the interactions. I made a big mistake using list items for the interactions. I thought it would be possible with the active state from the list item. But it made it a lot more complicated then I wanted. The thing that made it difficult was selectors. I wanted to select the item that I wanted to change as well, but it would be a whole spaghetti code for me. I looked at someoone else his project and saw them using labels and inputs. This was a lot more cleaner with the css. You only had to check if the label with the correct input is checked and then I could add the element I wanted to change as well. It was a bit time eating to change mu whole code around, because some of the scaling didn't work. It didn't work because I added the main to the body. But I'm happy that it works, and I learned that I need to think beforehand doing these things. 
+
+From the feedback I got this week, was to have a reference for the control panel. So I looked at some pictures online and I found one that I liked: 
+
+### Reference
+![image](https://user-images.githubusercontent.com/44086608/156918028-5b5b012b-f1f1-402a-acac-c5fb7fc2156d.png)
+
+I then changed the looks of my control panel and I think it already looks a lot better than before: 
+![image](https://user-images.githubusercontent.com/44086608/156918058-755cf2ca-435b-4e30-80c1-1cb56a533551.png)
+
+At last the fun part of this week. Adding the interactions. I wanted to add to the party ambiance. I created confetti, disco ball stretching and people jumping more up and down. As I told you before I looked if the input was checked and if so I added the parent element to it, see code below. This way I could change properties from the elements. If I wanted to change the variables, I could just grab the main element. 
+
+Changing a variable
+```
+    input:nth-child(2):checked ~ main{
+        --spinningSpeed: 1s;
+    }
+```
+
+Changing a element
+```
+    input:nth-child(5):checked ~ main li:nth-child(3) label:nth-child(5){
+        box-shadow: 0 0 0  transparent,
+                    0 0 0  transparent,
+                    inset 0 0 10px #2e2e2e;        
+        margin-top: 4px;
+    }
+```
 
