@@ -143,11 +143,11 @@ main > ul:first-child>li:nth-child(3){
 
     margin: 0 auto;
     padding: 0;
-    margin-bottom: calc(50vh / 6);
+    margin-bottom: calc(50vh / 5);
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 4vh;
+    grid-template-rows: calc(4h);
     grid-gap: 5px;
 
     align-self: center;
@@ -331,11 +331,11 @@ main > ul:first-child>li:nth-child(4){
 
     margin: 0 auto;
     padding: 0;
-    margin-bottom: calc(50vh / 6);
+    margin-bottom: calc(50vh / 5);
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 4vh;
+    grid-template-rows: calc(4h);
     grid-gap: 5px;
 
     align-self: center;
