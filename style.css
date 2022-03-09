@@ -410,6 +410,14 @@ main > ul:first-child>li:nth-child(4){
         margin-top: 4px;
     }
 
+    input:nth-child(10):checked ~ main > ul:nth-child(3) {
+        display: block;
+    }
+
+    input:nth-child(10):checked ~ main > ul:nth-child(4) {
+        display: block;
+    }
+
 
     ul:first-child>li:nth-child(4) label:nth-child(3){
         width:calc(10vw / 6);
@@ -433,6 +441,8 @@ main > ul:first-child>li:nth-child(4){
                     inset 0 0 10px #2e2e2e;
         margin-top: 4px;
     }
+
+    
 
     ul:first-child li:nth-child(4) label:nth-child(4){
         width:calc(10vw / 6);
@@ -624,8 +634,8 @@ ul:nth-child(2) li:nth-child(4){
 
     bottom: 0;
 
-    width: 100%;
-    height: 40%;
+    width: 100vw;
+    height: 50%;
 }
 
 @keyframes moveCrowd {
@@ -958,4 +968,59 @@ main > div div:nth-child(1) {
     left: 100%;
     animation-delay: -2.5s;
     background-color: var(--neonBlue);
+  }
+
+
+/*Disco lights*/
+main > ul:nth-child(3){
+    background: url(https://maps.gstatic.com/mapfiles/santatracker/v201612021015/scenes/codeboogieframe/img/lights/ceiling.svg);
+    position: absolute;
+    display: none;
+    width: 105.3em;
+    height: 59.1em;
+    background-size: 105.3em;
+    left: -5%;
+    top:35em;
+    transform: scale(2.5);
+}
+
+main > ul:nth-child(3) li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 100%;
+    animation: light 1s infinite;
+}
+
+main > ul:nth-child(4){
+    background: url(https://maps.gstatic.com/mapfiles/santatracker/v201612021015/scenes/codeboogieframe/img/lights/ceiling.svg);
+    position: absolute;
+    display: none;
+    width: 105.3em;
+    height: 59.1em;
+    background-size: 105.3em;
+    right: -5%;
+    top:35em;
+    transform: scale(2.5);
+}
+
+main > ul:nth-child(4) li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 100%;
+    animation: light 1s infinite;
+}
+
+@keyframes light {
+    0% {
+      background-image: url("https://maps.gstatic.com/mapfiles/santatracker/v201612021015/scenes/codeboogieframe/img/lights/ceiling-light--red.svg")
+    }
+    100% {
+      background-image: url("https://maps.gstatic.com/mapfiles/santatracker/v201612021015/scenes/codeboogieframe/img/lights/ceiling-light--green.svg")
+    }
   }
