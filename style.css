@@ -1,11 +1,11 @@
 :root {
     --transparencyLight: 0.25;
+
     --animationSpeed: 4s;
     --spinningSpeed: 5s;
-
     --jumpSpeed: 5s;
-
     --moveDiscoball: 20s;
+    --timeLightsParty: 0s;
 
     --neonPurple: rgb(143, 23, 255);
     --neonBlue: rgb(68, 185, 253);
@@ -442,6 +442,10 @@ main > ul:first-child>li:nth-child(4){
         margin-top: 4px;
     }
 
+    input:nth-child(11):checked ~ main > article {
+        --timeLightsParty: 3s;
+    }
+
     
 
     ul:first-child li:nth-child(4) label:nth-child(4){
@@ -716,11 +720,28 @@ article {
 	
 	border-radius:50%;
 	box-shadow:
-	    calc(var(--maat) / -5) 0 calc(var(--maat) / 3) rgb(255, 255, 255),
-		calc(var(--maat) / 5) 0 calc(var(--maat) / 3) rgb(255, 255, 255);
+	    calc(var(--maat) / -5) 0 calc(var(--maat) / 3) var(--neonBlue),
+		calc(var(--maat) / 5) 0 calc(var(--maat) / 3) var(--neonBlue);
 	
 	transform-origin:center calc(var(--hang-maat) * -1);
-	animation:swing 3s -2.5s infinite alternate ease-in-out;
+	animation:swing 3s -2.5s infinite alternate ease-in-out, lightsParty var(--timeLightsParty) infinite;
+}
+
+@keyframes lightsParty {
+    0%, 100% {
+		box-shadow: 
+            calc(var(--maat) / -5) 0 calc(var(--maat) / 3) var(--neonPurple),
+            calc(var(--maat) / 5) 0 calc(var(--maat) / 3) var(--neonBlue),
+            0 calc(var(--maat) / -5) calc(var(--maat) / 3) var(--neonGreen),
+            0 calc(var(--maat) / 5)  calc(var(--maat) / 3) var(--neonYellow);;
+	}
+	50% {
+        box-shadow: 
+            calc(var(--maat) / -5) 0 calc(var(--maat) / 3) var(--neonBlue),
+            calc(var(--maat) / 5) 0 calc(var(--maat) / 3) var(--neonYellow),
+            0 calc(var(--maat) / -5) calc(var(--maat) / 3) var(--neonPurple),
+            0 calc(var(--maat) / 5)  calc(var(--maat) / 3) var(--neonGreen);;
+	}
 }
 
 @keyframes swing {
