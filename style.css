@@ -443,7 +443,7 @@ main > ul:first-child>li:nth-child(4){
     }
 
     input:nth-child(11):checked ~ main > article {
-        --timeLightsParty: 3s;
+        --timeLightsParty: 0.5s;
     }
 
     
@@ -719,28 +719,20 @@ article {
 	left:calc(50% - var(--maat) / 2);
 	
 	border-radius:50%;
-	box-shadow:
-	    calc(var(--maat) / -5) 0 calc(var(--maat) / 3) var(--neonBlue),
-		calc(var(--maat) / 5) 0 calc(var(--maat) / 3) var(--neonBlue);
-	
-	transform-origin:center calc(var(--hang-maat) * -1);
-	animation:swing 3s -2.5s infinite alternate ease-in-out, lightsParty var(--timeLightsParty) infinite;
+        
+	transform-origin: center calc(var(--hang-maat) * -1);
+	animation:
+        swing 3s -2.5s infinite alternate ease-in-out, 
+        lightsParty var(--timeLightsParty) ease infinite;
 }
 
 @keyframes lightsParty {
-    0%, 100% {
-		box-shadow: 
-            calc(var(--maat) / -5) 0 calc(var(--maat) / 3) var(--neonPurple),
-            calc(var(--maat) / 5) 0 calc(var(--maat) / 3) var(--neonBlue),
-            0 calc(var(--maat) / -5) calc(var(--maat) / 3) var(--neonGreen),
-            0 calc(var(--maat) / 5)  calc(var(--maat) / 3) var(--neonYellow);;
-	}
 	50% {
         box-shadow: 
-            calc(var(--maat) / -5) 0 calc(var(--maat) / 3) var(--neonBlue),
-            calc(var(--maat) / 5) 0 calc(var(--maat) / 3) var(--neonYellow),
-            0 calc(var(--maat) / -5) calc(var(--maat) / 3) var(--neonPurple),
-            0 calc(var(--maat) / 5)  calc(var(--maat) / 3) var(--neonGreen);;
+            0px -10px 10px 10px rgba(73, 182, 255, 0.548),
+            0px 10px 10px 10px rgba(221, 148, 250, 0.575),
+            -10px 0px 10px 10px rgba(143, 255, 143, 0.527),
+            10px 0px 10px 10px rgba(186, 147, 248, 0.473);;
 	}
 }
 
