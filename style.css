@@ -695,7 +695,7 @@ ul:nth-child(3){
 
 /* Disco ball */
 article {
-	--maat: min(50vmin, 10em);
+	--maat: min(50vmin, 15em);
 	--hang-maat:calc(var(--maat));
 	
 	width:var(--maat);
