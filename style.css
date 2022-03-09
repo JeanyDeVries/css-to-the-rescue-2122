@@ -265,6 +265,11 @@ main > ul:first-child>li:nth-child(3){
         margin-top: 4px;
     }
 
+    input:nth-child(5):checked ~ main{
+        --animationSpeed: 1s;
+        --transparencyLight: 0.6;
+    }
+
     ul:first-child li:nth-child(3) label:nth-child(6){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -282,6 +287,10 @@ main > ul:first-child>li:nth-child(3){
                     0 0 0  transparent,
                     inset 0 0 10px #2e2e2e;        
         margin-top: 4px;
+    }
+
+    input:nth-child(6):checked ~ main{
+        --spinningSpeed: 1s;
     }
 
     ul:first-child li:nth-child(3) label:nth-child(7){
@@ -303,6 +312,11 @@ main > ul:first-child>li:nth-child(3){
         margin-top: 4px;
     }
 
+    input:nth-child(7):checked ~ main{
+        --jumpSpeed: 1.5s;
+    }
+
+
     ul:first-child li:nth-child(3) label:nth-child(8){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -320,6 +334,10 @@ main > ul:first-child>li:nth-child(3){
                     0 0 0  transparent,
                     inset 0 0 10px #2e2e2e;        
         margin-top: 4px;
+    }
+
+    input:nth-child(8):checked ~ main > div{
+        display: block;
     }
 
 
@@ -471,6 +489,10 @@ main > ul:first-child>li:nth-child(4){
         margin-top: 4px;
     }
 
+    input:nth-child(12):checked ~ main > div{
+        display: block;
+    }
+
     ul:first-child li:nth-child(4) label:nth-child(5){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -492,6 +514,10 @@ main > ul:first-child>li:nth-child(4){
                     0 0 0  transparent,
                     inset 0 0 10px #2e2e2e;
         margin-top: 4px;
+    }
+
+    input:nth-child(13):checked ~ main article {
+        animation: stretchDiscoBall 1s ease-in infinite;
     }
 
     ul:first-child li:nth-child(4) label:nth-child(6){
@@ -516,6 +542,16 @@ main > ul:first-child>li:nth-child(4){
                     inset 0 0 10px #2e2e2e;
         margin-top: 4px;
     }
+    
+    input:nth-child(14):checked ~ main > ul:nth-child(3) {
+        display: block;
+    }
+
+    input:nth-child(14):checked ~ main > ul:nth-child(4) {
+        display: block;
+    }
+
+
 
     ul:first-child li:nth-child(4) label:nth-child(7){
         width:calc(10vw / 6);
@@ -540,6 +576,10 @@ main > ul:first-child>li:nth-child(4){
         margin-top: 4px;
     }
 
+    input:nth-child(15):checked ~ main > article {
+        --timeLightsParty: 0.5s;
+    }
+
     ul:first-child li:nth-child(4) label:nth-child(8){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -561,6 +601,10 @@ main > ul:first-child>li:nth-child(4){
                     0 0 0  transparent,
                     inset 0 0 10px #2e2e2e;
         margin-top: 4px;
+    }
+
+    input:nth-child(16):checked ~ main > div{
+        display: block;
     }
 
 
