@@ -9,6 +9,9 @@
 [ Week 4 ~ Last changes](#Week4)
 
 # Result  <a name="Result">
+ 
+https://user-images.githubusercontent.com/44086608/157649719-47111f93-7ecf-4a39-95ae-5691c9598725.mp4
+
 
 # Concept <a name="Concept">
 The concept is to make a interactivee DJ control panel which interacts with the crowd. The interactions are handled by buttons and sliders. 
@@ -89,4 +92,29 @@ Changing a element
 I was also not happy with how responsive the site was with the control panel. I made a start, but it was not perfect. So after retweaking some code I finally had the result I wanted: 
 
 https://user-images.githubusercontent.com/44086608/157633437-6d3e2017-c679-4a72-ac18-17b80c5e26d3.mp4
+ 
+ At last I wanted to add details to the turn thingies. In the reference it has a light and darker part. After looking on google I found a nice example: https://codepen.io/lbebber/details/RPLQxN. They used conic gradient which is perfect for what I want. I divided my circle in 4 parts and switched between white and black. This is the code: 
+ ```
+       conic-gradient(
+        #d8d8d898  90deg,
+        rgba(255, 255, 255, 0.849) 135deg,
+        #d8d8d898  180deg,
+        #d8d8d898  270deg,
+        rgba(255, 255, 255, 0.849) 315deg,
+        #d8d8d898  360deg     
+        ),
+    conic-gradient(
+        rgba(20, 20, 20, 0.575)  0deg,
+        rgb(20, 20, 20) 45deg,
+        rgba(20, 20, 20, 0.575) 90deg,
+        rgba(20, 20, 20, 0.575)  180deg,
+        rgb(20, 20, 20) 225deg,
+        rgba(20, 20, 20, 0.575) 270deg
+        ),
+ ```
+ 
+ And this is the result:
+ 
+ ![image](https://user-images.githubusercontent.com/44086608/157649126-bf41b1fb-8323-4d33-9a37-1fcf9581e3ff.png)
+
 
