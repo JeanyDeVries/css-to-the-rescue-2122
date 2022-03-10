@@ -85,3 +85,8 @@ Changing a element
 ```
 
 # Week 4 ~ Last changes <a name="Week4">
+ This week I added a 2 more interactions, discoball lighting and disco lights. I then gave each button a interaction, which is sadly just the interactions I already had. But within this time it was a bit difficult for me to make 16 interactions, so I stuck with 7. 
+I was also not happy with how responsive the site was with the control panel. I made a start, but it was not perfect. So after retweaking some code I finally had the result I wanted: 
+
+https://user-images.githubusercontent.com/44086608/157633437-6d3e2017-c679-4a72-ac18-17b80c5e26d3.mp4
+
