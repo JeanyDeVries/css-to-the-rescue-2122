@@ -41,6 +41,7 @@ main{
     justify-content: center;
 }
 
+/*Used an after to let the background gradient go over the rest of the elements*/
 main::after {
     content:"";
     position: fixed;
@@ -80,9 +81,11 @@ main > ul:first-child{
     z-index: 10;
 }
 
+/*Circle*/
 main > ul:first-child>li:first-child{
     border-radius:50%;
     background: 
+      /*Light and shadows*/
       conic-gradient(
         #d8d8d898  90deg,
         rgba(255, 255, 255, 0.849) 135deg,
@@ -99,6 +102,7 @@ main > ul:first-child>li:first-child{
         rgb(20, 20, 20) 225deg,
         rgba(20, 20, 20, 0.575) 270deg
         ),
+      /*Stripes*/
       repeating-radial-gradient(
         circle,
         #8a8989 1px,
@@ -108,9 +112,11 @@ main > ul:first-child>li:first-child{
     animation:  rotate var(--spinningSpeed) infinite linear;
 } 
 
+/*Circle*/
 main > ul:first-child>li:nth-child(2){
     border-radius: 50%;
     background: 
+      /*Light and shadows*/
       conic-gradient(
         #d8d8d898  90deg,
         rgba(255, 255, 255, 0.849) 135deg,
@@ -127,6 +133,7 @@ main > ul:first-child>li:nth-child(2){
         rgb(20, 20, 20) 225deg,
         rgba(20, 20, 20, 0.575) 270deg
         ),
+      /*Stripes*/
       repeating-radial-gradient(
         circle,
         #8a8989 1px,
@@ -142,10 +149,13 @@ main > ul:first-child>li:nth-child(2){
 }
 
 /* CONTROL PANEL BUTTONS*/
+
+/*Left grid ~ 8 buttons*/
 main > ul:first-child>li:nth-child(3){
     grid-template-rows: calc(4h);
 }
 
+    /*First button left top*/
     main > ul:first-child li:nth-child(3) label:first-child{
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -162,20 +172,22 @@ main > ul:first-child>li:nth-child(3){
         margin-top: 4px;
     }
 
+    /*Animation Room light*/
     input:nth-child(1):checked ~ main{
         --animationSpeed: 1s;
         --transparencyLight: 0.6;
     }
 
-   main > ul:first-child li:nth-child(3) label:nth-child(2){
-        width:calc(10vw / 6);
-        height:calc(10vw / 6);
-        background-color:var(--neonBlue);
+    /*Second button left top*/
+    main > ul:first-child li:nth-child(3) label:nth-child(2){
+            width:calc(10vw / 6);
+            height:calc(10vw / 6);
+            background-color:var(--neonBlue);
 
-        border-radius: 20%;
+            border-radius: 20%;
 
-        box-shadow: 0 2px 0px var(--neonBlue), 0px 4px 30px  var(--neonBlue), inset 0 0 10px #2e2e2e;
-        transition: all ease 0.4s;
+            box-shadow: 0 2px 0px var(--neonBlue), 0px 4px 30px  var(--neonBlue), inset 0 0 10px #2e2e2e;
+            transition: all ease 0.4s;
     }
 
     
@@ -186,10 +198,12 @@ main > ul:first-child>li:nth-child(3){
         margin-top: 4px;
     }
 
+    /*Turn circle speed up effect*/
     input:nth-child(2):checked ~ main{
         --spinningSpeed: 1s;
     }
 
+    /*Third button left top*/
     main > ul:first-child li:nth-child(3) label:nth-child(3){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -201,10 +215,10 @@ main > ul:first-child>li:nth-child(3){
         transition: all ease 0.4s;
     }
 
+    /*Crowd jump speed effect*/
     input:nth-child(3):checked ~ main{
         --jumpSpeed: 1.5s;
     }
-
 
     input:nth-child(3):checked ~ main li:nth-child(3) label:nth-child(3){
         box-shadow: 0 0 0  transparent,
@@ -213,6 +227,7 @@ main > ul:first-child>li:nth-child(3){
         margin-top: 4px;
     }
 
+    /*Fourth button left top*/
     ul:first-child li:nth-child(3) label:nth-child(4){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -232,10 +247,12 @@ main > ul:first-child>li:nth-child(3){
         margin-top: 4px;
     }
 
+    /*Confetti*/
     input:nth-child(4):checked ~ main > div{
         display: block;
     }
 
+    /*first button left bottom*/
     ul:first-child li:nth-child(3) label:nth-child(5){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -255,11 +272,13 @@ main > ul:first-child>li:nth-child(3){
         margin-top: 4px;
     }
 
+    /*Animation Room light*/
     input:nth-child(5):checked ~ main{
         --animationSpeed: 1s;
         --transparencyLight: 0.6;
     }
 
+    /*Second button left bottom*/
     ul:first-child li:nth-child(3) label:nth-child(6){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -279,10 +298,12 @@ main > ul:first-child>li:nth-child(3){
         margin-top: 4px;
     }
 
+    /*Turn circle speed up effect*/
     input:nth-child(6):checked ~ main{
         --spinningSpeed: 1s;
     }
 
+    /*Third button left bottom*/
     ul:first-child li:nth-child(3) label:nth-child(7){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -302,11 +323,13 @@ main > ul:first-child>li:nth-child(3){
         margin-top: 4px;
     }
 
+    /*Crowd jump effect*/
     input:nth-child(7):checked ~ main{
         --jumpSpeed: 1.5s;
     }
 
 
+    /*Fourth button left bottom*/
     ul:first-child li:nth-child(3) label:nth-child(8){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -326,16 +349,16 @@ main > ul:first-child>li:nth-child(3){
         margin-top: 4px;
     }
 
+    /*Confetti effect*/ 
     input:nth-child(8):checked ~ main > div{
         display: block;
     }
 
-
+/*right grid ~ 8 buttons*/
 main > ul:first-child>li:nth-child(4){
     grid-template-rows: calc(4h);
 }
-
-
+    /*first button left top*/
     ul:first-child li:nth-child(4) label:first-child{
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -358,6 +381,7 @@ main > ul:first-child>li:nth-child(4){
         margin-top: 4px;
     }
 
+    /*Stretch discoball effect*/ 
     input:nth-child(9):checked ~ main article {
         animation: stretchDiscoBall 1s ease-in infinite;
     }
@@ -380,7 +404,7 @@ main > ul:first-child>li:nth-child(4){
         }
     }
 
-
+    /*second button left top*/
     ul:first-child>li:nth-child(4) label:nth-child(2){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -404,6 +428,7 @@ main > ul:first-child>li:nth-child(4){
         margin-top: 4px;
     }
 
+    /*Disco lights effect*/ 
     input:nth-child(10):checked ~ main > ul:nth-child(3) {
         display: block;
     }
@@ -412,7 +437,7 @@ main > ul:first-child>li:nth-child(4){
         display: block;
     }
 
-
+    /*Third button left top*/
     ul:first-child>li:nth-child(4) label:nth-child(3){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -436,12 +461,13 @@ main > ul:first-child>li:nth-child(4){
         margin-top: 4px;
     }
 
+    /*Discoball lights effect*/
     input:nth-child(11):checked ~ main > article {
         --timeLightsParty: 0.5s;
     }
 
     
-
+    /*Fourth button left top*/
     ul:first-child li:nth-child(4) label:nth-child(4){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -465,10 +491,12 @@ main > ul:first-child>li:nth-child(4){
         margin-top: 4px;
     }
 
+    /*Confetti effect*/
     input:nth-child(12):checked ~ main > div{
         display: block;
     }
 
+    /*First button left bottom*/
     ul:first-child li:nth-child(4) label:nth-child(5){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -492,10 +520,12 @@ main > ul:first-child>li:nth-child(4){
         margin-top: 4px;
     }
 
+    /*Stretch disco ball effect*/
     input:nth-child(13):checked ~ main article {
         animation: stretchDiscoBall 1s ease-in infinite;
     }
 
+    /*Second button left bottom*/
     ul:first-child li:nth-child(4) label:nth-child(6){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -519,6 +549,7 @@ main > ul:first-child>li:nth-child(4){
         margin-top: 4px;
     }
     
+    /*Disco lights effect*/
     input:nth-child(14):checked ~ main > ul:nth-child(3) {
         display: block;
     }
@@ -528,7 +559,7 @@ main > ul:first-child>li:nth-child(4){
     }
 
 
-
+    /*Third button left bottom*/
     ul:first-child li:nth-child(4) label:nth-child(7){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -552,10 +583,12 @@ main > ul:first-child>li:nth-child(4){
         margin-top: 4px;
     }
 
+    /*Discoball lights effect*/
     input:nth-child(15):checked ~ main > article {
         --timeLightsParty: 0.5s;
     }
 
+    /*Fourth button left bottom*/
     ul:first-child li:nth-child(4) label:nth-child(8){
         width:calc(10vw / 6);
         height:calc(10vw / 6);
@@ -579,6 +612,7 @@ main > ul:first-child>li:nth-child(4){
         margin-top: 4px;
     }
 
+    /*Confetti effect*/
     input:nth-child(16):checked ~ main > div{
         display: block;
     }
@@ -645,6 +679,7 @@ ul:nth-child(2) li:nth-child(3){
     transition: all 2s ease-in-out;
 }
 
+/*Set the bottom of the crowd to black, otherwise there would be an empty space*/
 ul:nth-child(2) li:nth-child(4){
     background-color: black;
 
@@ -691,34 +726,6 @@ ul:nth-child(2) li:nth-child(4){
         bottom: 0em;
     }
 }
-
-ul:nth-child(3){
-    position: absolute;
-
-    background-image: url("images//discobal.png");
-    background-position: center;
-    background-size:cover;
-
-    margin: 0 auto;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0;
-    top: 6%;
-
-    width: 150px;
-    height: 150px;
-    background-color: rgba(122, 122, 122, 0.9);
-
-    border-radius:50%;
-    box-shadow: 0px 0px 100px 100px white, inset  0px 0px 100px 20px white;
-}
-
-
-
-
-
 
 
 /* Disco ball */
@@ -915,7 +922,8 @@ main > div{
     top:0;
   }
 
-  main > div div {
+/*Confetti piece*/
+main > div div {
     top: -10vh;
     width:calc(10vw/6);
     height:calc(10vw/6);
@@ -943,6 +951,7 @@ main > div{
     }
 }
 
+/*Confetti positioning plus coloring*/
 main > div div:nth-child(1) {
     left: 10%;
     animation-delay: 0;
@@ -995,6 +1004,7 @@ main > div div:nth-child(1) {
   }
 
 
+
 /*Disco lights*/
 main > ul:nth-child(3){
     background: url(https://maps.gstatic.com/mapfiles/santatracker/v201612021015/scenes/codeboogieframe/img/lights/ceiling.svg);
@@ -1040,6 +1050,7 @@ main > ul:nth-child(4) li{
     animation: light 1s infinite;
 }
 
+/*Changing the images gives the effect of changing colors*/
 @keyframes light {
     0% {
       background-image: url("https://maps.gstatic.com/mapfiles/santatracker/v201612021015/scenes/codeboogieframe/img/lights/ceiling-light--red.svg");
@@ -1050,6 +1061,9 @@ main > ul:nth-child(4) li{
   }
 
 
+
+
+/*Control panel direct children, making it responsive*/
 main > ul:first-child {
     position: absolute;
     bottom: 0px;
