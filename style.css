@@ -1,5 +1,5 @@
 :root {
-    --transparencyLight: 0.25;
+    --transparencyLight: 0.3;
 
     --animationSpeed: 4s;
     --spinningSpeed: 5s;
@@ -48,7 +48,7 @@ main::after {
     width:100vw;
     height:100vh;
 
-    background: linear-gradient(20deg, #ff0000, #ff9500, #ffee00, #3cff00, #00eeff, #fa009a, #e600ff);
+    background: linear-gradient(90deg, #ff0000, #ff9500, #ffee00, #3cff00, #00a2ff, #fa009a, #e600ff);
     background-size: 1600% 1600%;
 
     opacity: var(--transparencyLight);
@@ -706,10 +706,10 @@ article {
 @keyframes lightsParty {
 	50% {
         box-shadow: 
-            0px -10px 10px 10px rgba(73, 182, 255, 0.548),
-            0px 10px 10px 10px rgba(221, 148, 250, 0.575),
-            -10px 0px 10px 10px rgba(143, 255, 143, 0.527),
-            10px 0px 10px 10px rgba(186, 147, 248, 0.473);;
+            0em -10em 10em 10em rgba(73, 182, 255, 0.548),
+            0em 10em 10em 10em rgba(221, 148, 250, 0.575),
+            -10em 0em 10em 10em rgba(143, 255, 143, 0.527),
+            10em 0em 10em 10em rgba(186, 147, 248, 0.473);;
 	}
 }
 
@@ -1008,7 +1008,7 @@ main > ul:nth-child(4) li{
 
 @keyframes light {
     0% {
-      background-image: url("https://maps.gstatic.com/mapfiles/santatracker/v201612021015/scenes/codeboogieframe/img/lights/ceiling-light--red.svg")
+      background-image: url("https://maps.gstatic.com/mapfiles/santatracker/v201612021015/scenes/codeboogieframe/img/lights/ceiling-light--red.svg");
     }
     100% {
       background-image: url("https://maps.gstatic.com/mapfiles/santatracker/v201612021015/scenes/codeboogieframe/img/lights/ceiling-light--green.svg")
