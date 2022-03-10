@@ -29,12 +29,16 @@ body {
     padding: 0;
 }
 
-main{          
+main{
     width: 100vw;
     height: 100vh;
-
     margin: 0;
     padding: 0;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 main::after {
@@ -70,61 +74,30 @@ li{
 
 /* CONTROL PANEL*/
 main > ul:first-child{
-    margin: 0 auto;
-
-    width: 30%;
-    height: calc(90vw / 6);
-
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 50%;
-    
     background-color: rgb(0, 0, 0);
-    
-    position: relative;
-    top: 60vh;
-
-    margin: 0 auto;
-    padding: 0;
-    padding-bottom: 2%;
-
     border: 2px solid rgb(78, 78, 78);
     box-shadow: 0px 5px 0px rgb(19, 19, 19);
-
     z-index: 10;
 }
 
 main > ul:first-child>li:first-child{
-    justify-self: center;
-    margin-top: 2%;
-
-    width:calc(50vw / 6);
-    height:calc(50vw / 6);
     border-radius:50%;
-
     background: repeating-radial-gradient(
         circle,
         #8a8989 1px,
         #d8d8d8 3px
       );
-
-      box-shadow: 0px 0px 0px 5px  rgb(105, 105, 105), inset 0 0 0 5px #78a7ff;
-      animation: rotate var(--spinningSpeed) infinite linear;
+    box-shadow: 0px 0px 0px 5px  rgb(105, 105, 105), inset 0 0 0 5px #78a7ff;
+    animation: rotate var(--spinningSpeed) infinite linear;
 } 
 
 main > ul:first-child>li:nth-child(2){
-    justify-self: center;
-    margin-top: 2%;
-
-    width:calc(50vw / 6);
-    height:calc(50vw / 6);
     border-radius: 50%;
-
     background: repeating-radial-gradient(
         circle,
         #8a8989 1px,
         #d8d8d8 3px
       );
-
     box-shadow: 0px 0px 0px 5px  rgb(105, 105, 105), inset 0 0 0 5px #78a7ff;
     animation: rotate var(--spinningSpeed) infinite linear;
 }
@@ -136,32 +109,15 @@ main > ul:first-child>li:nth-child(2){
 
 /* CONTROL PANEL BUTTONS*/
 main > ul:first-child>li:nth-child(3){
-    float:left;
-
-    width: 50%;
-    height: 28%;
-
-    margin: 0 auto;
-    padding: 0;
-    margin-bottom: calc(50vh / 5);
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: calc(4h);
-    grid-gap: 5px;
-
-    align-self: center;
 }
 
     main > ul:first-child li:nth-child(3) label:first-child{
         width:calc(10vw / 6);
         height:calc(10vw / 6);
         background-color:var(--neonPurple);
-
         border-radius: 20%;
-
         box-shadow: 0 2px 0px var(--neonPurple), 0px 4px 30px  var(--neonPurple), inset 0 0 10px #2e2e2e;
-
         transition: all ease 0.4s;
     }
 
@@ -342,21 +298,7 @@ main > ul:first-child>li:nth-child(3){
 
 
 main > ul:first-child>li:nth-child(4){
-    float:left;
-
-    width: 50%;
-    height: 28%;
-
-    margin: 0 auto;
-    padding: 0;
-    margin-bottom: calc(50vh / 5);
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: calc(4h);
-    grid-gap: 5px;
-
-    align-self: center;
 }
 
 
@@ -614,9 +556,7 @@ ul:nth-child(2){
     padding: 0%;
     position: absolute;
     top: 0;
-
     display: block;
-
     width: 100%;
     height: 70%;
 }
@@ -626,14 +566,10 @@ ul:nth-child(2) li:first-child{
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
-
     position: absolute;
-
     margin-left: -5vw;
-
     width: 110vw;
     height: 100%;
-
     animation: moveCrowd 15s linear infinite;
     animation: jumpCrowd var(--jumpSpeed)linear infinite;
     transition: all 2s ease-in-out;
@@ -661,7 +597,7 @@ ul:nth-child(2) li:nth-child(3){
     background-image: url("images/crowd-front.png");
     background-position: center;
     background-repeat: repeat;
-    background-size: cover;
+    background-size:cover;
 
     position: absolute;
 
@@ -683,7 +619,7 @@ ul:nth-child(2) li:nth-child(4){
     bottom: 0;
 
     width: 100vw;
-    height: 50%;
+    height: 40%;
 }
 
 @keyframes moveCrowd {
@@ -755,15 +691,12 @@ ul:nth-child(3){
 article {
 	--maat: min(50vmin, 15em);
 	--hang-maat:calc(var(--maat));
-	
 	width:var(--maat);
-    aspect-ratio: 1/1;	
+	aspect-ratio: 1/1;
 	position:absolute;
 	top:50px;
 	left:calc(50% - var(--maat) / 2);
-	
 	border-radius:50%;
-        
 	transform-origin: center calc(var(--hang-maat) * -1);
 	animation:
         swing 3s -2.5s infinite alternate ease-in-out, 
@@ -1081,3 +1014,67 @@ main > ul:nth-child(4) li{
       background-image: url("https://maps.gstatic.com/mapfiles/santatracker/v201612021015/scenes/codeboogieframe/img/lights/ceiling-light--green.svg")
     }
   }
+
+
+main > ul:first-child {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 20px 10px 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+main > ul:first-child>li:first-child {
+    display: flex;
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    flex: 1 1 50%;
+    margin: 10px 10px 30px 10px;
+}
+
+main > ul:first-child>li:nth-child(2) {
+    display: flex;
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    flex: 1 1 50%;
+    margin: 10px 10px 30px 10px;
+}
+
+main > ul:first-child>li:nth-child(3) {
+    display: flex;
+    flex: 1 1 40%;
+    gap: 10px;
+    margin: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main > ul:first-child>li:nth-child(3) label {
+    display: flex;
+    flex: 1 1 20%;
+    padding: 14px;
+}
+
+main > ul:first-child>li:nth-child(4) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 40%;
+    gap: 10px;
+    margin: 15px;
+}
+
+main > ul:first-child>li:nth-child(4) label {
+    display: flex;
+    flex: 1 1 20%;
+    margin: 5px;
+    padding: 14px;
+}
