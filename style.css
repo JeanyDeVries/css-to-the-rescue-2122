@@ -82,18 +82,52 @@ main > ul:first-child{
 
 main > ul:first-child>li:first-child{
     border-radius:50%;
-    background: repeating-radial-gradient(
+    background: 
+      conic-gradient(
+        #d8d8d898  90deg,
+        rgba(255, 255, 255, 0.849) 135deg,
+        #d8d8d898  180deg,
+        #d8d8d898  270deg,
+        rgba(255, 255, 255, 0.849) 315deg,
+        #d8d8d898  360deg     
+        ),
+    conic-gradient(
+        rgba(20, 20, 20, 0.575)  0deg,
+        rgb(20, 20, 20) 45deg,
+        rgba(20, 20, 20, 0.575) 90deg,
+        rgba(20, 20, 20, 0.575)  180deg,
+        rgb(20, 20, 20) 225deg,
+        rgba(20, 20, 20, 0.575) 270deg
+        ),
+      repeating-radial-gradient(
         circle,
         #8a8989 1px,
         #d8d8d8 3px
       );
     box-shadow: 0px 0px 0px 5px  rgb(105, 105, 105), inset 0 0 0 5px #78a7ff;
-    animation: rotate var(--spinningSpeed) infinite linear;
+    animation:  rotate var(--spinningSpeed) infinite linear;
 } 
 
 main > ul:first-child>li:nth-child(2){
     border-radius: 50%;
-    background: repeating-radial-gradient(
+    background: 
+      conic-gradient(
+        #d8d8d898  90deg,
+        rgba(255, 255, 255, 0.849) 135deg,
+        #d8d8d898  180deg,
+        #d8d8d898  270deg,
+        rgba(255, 255, 255, 0.849) 315deg,
+        #d8d8d898  360deg     
+        ),
+    conic-gradient(
+        rgba(20, 20, 20, 0.575)  0deg,
+        rgb(20, 20, 20) 45deg,
+        rgba(20, 20, 20, 0.575) 90deg,
+        rgba(20, 20, 20, 0.575)  180deg,
+        rgb(20, 20, 20) 225deg,
+        rgba(20, 20, 20, 0.575) 270deg
+        ),
+      repeating-radial-gradient(
         circle,
         #8a8989 1px,
         #d8d8d8 3px
