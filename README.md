@@ -1,6 +1,16 @@
 # CSS to the Rescue ~ DJ Control Panel
 
-# Concept
+# Table of contents
+[Result](#Result)  
+[Concept](#Concept)  
+[Week 1 ~ Making the concept](#Week1)  
+[Week 2 ~ Styling the page](#Week2)  
+[Week 3 ~ Adding the interactions](#Week3)  
+[ Week 4 ~ Last changes](#Week4)
+
+# Result  <a name="Result">
+
+# Concept <a name="Concept">
 The concept is to make a interactivee DJ control panel which interacts with the crowd. The interactions are handled by buttons and sliders. 
 Interaction ideas:
 - Crowd that dances upwards
@@ -16,15 +26,15 @@ Detail ideas:
 - Cursor is a headset or some other icon
 
 
-# Week 1 ~ Making the concept
+# Week 1 ~ Making the concept  <a name="Week1">
 To start with the end project I first decided I wanted to work with a interactive control panel. I chose this because I thought this would be nice in combination with my game development, plus you had a lot of freedom on what to make. 
 The second thing for me to do was sketching. I needed to have an idea on what I wanted to make. So I thought of different ideas and drew them out, see pictures below. 
 
 !<img src="https://user-images.githubusercontent.com/44086608/154667193-96b281ac-8ed6-412b-ba8a-4073e3e138e4.jpg" width="400" height="300"> !<img src="https://user-images.githubusercontent.com/44086608/154667192-15966f4e-a052-484f-8645-43afebe49e3f.jpg" width="400" height="300">
 
 I chose my first idea of the DJ control panel. The reason why is because the control panel is easy to implement because a dj already has one. Plus you can have so much interactions with it. 
-
-# Week 2 ~ Styling the page
+ 
+# Week 2 ~ Styling the page  <a name="Week2">
 My focus for this week was to create the scene without any interactions first. I wanted to start with the styling and see how it would turn out. 
 The result was this at the end of the week:
 
@@ -40,7 +50,7 @@ The second thing I struggled with was the on click with my buttons. For some rea
 
 https://user-images.githubusercontent.com/44086608/155136853-e3752ee8-e735-43ff-9dcf-5c6d8b3523fa.mp4
 
-# Week 3 ~ Adding the interactions
+# Week 3 ~ Adding the interactions <a name="Week3">
 As you saw in week 2 I still hadn't made the site responsive and as this is a course of CSS it is an important case to have it working. The first step I had to do was change from flex to grid. This way it would scale nicely together. After that has been done, it still wasn't perfect. After fooling around I found out that using the calc function was the best way to make it work. I used the view width in this case. It's still not perfect, but for me who has a little knowledge of CSS makes me already a bit happy with the result. It does need some tweaking off course, but I don't know if I'll have time for it. 
 
 https://user-images.githubusercontent.com/44086608/156917795-22de7d6f-7a3a-46e5-aa21-e084dfc940dd.mp4
@@ -74,3 +84,4 @@ Changing a element
     }
 ```
 
+# Week 4 ~ Last changes <a name="Week4">
